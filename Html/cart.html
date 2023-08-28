@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/dark-mode.css" id="dark-mode">
+    <link rel="stylesheet" href="../CSS/media.css">
+
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <title>Cart</title>
+</head>
+<body id="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+        <div class="container ">
+          <a class="navbar-brand nav-name text-white" href="#">GO CART</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto gap-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#Home">Home</a>
+              </li>
+             
+         
+         
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Electronics</a></li>
+                  <li><a class="dropdown-item" href="#">Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Home and Kitchen</a></li>
+                  <li><a class="dropdown-item" href="#">Beauty and Personal care</a></li>
+                  <li><a class="dropdown-item" href="#">Sports and Outdoors</a></li>
+                  <li><a class="dropdown-item" href="#">Books and Media</a></li>
+                  <li><a class="dropdown-item" href="#">Automotive</a></li>
+                  <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
+                  <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
+                  <li><a class="dropdown-item" href="#">Electronics</a></li>
+                  <li><a class="dropdown-item" href="#">Electronics</a></li>                 
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="Html/updateProfile.html">profile</a></li>
+                  <li><a class="dropdown-item " href="#">sign out</a></li>
+                  
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link active text-white"   href="../Html/cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+      
+              </li>
+              <li class="nav-item mt-2">
+                <i class="fa-solid fa-moon fs-3  d-block  text-white" id="moon" ></i>
+                <i class="fa-solid fa-sun fs-3  d-none text-white" id="sun" ></i>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning text-white" type="submit">Search</button>
+            </form>
+            
+          </div>
+        </div>
+        
+      </nav>
+
+      <section class="cart mx-3 "> 
+        <h3 class="text-center font-monospace mb-5">Your cart</h3>
+
+     <table class="table  table-bordered  table text-center">
+      
+    <thead>
+
+      <th>photo</th>
+      <th>name</th>
+      <th>price</th>
+      
+      <th>Remove</th>
+      
+    </thead>
+      <tbody class="table-group-divider">
+       
+        <tr class="">
+          <td class="w-25">
+            <img src="../Image/img.png" class="w-50" alt="">
+          </td>
+          <td class="pt-5 fs-4">short</td>
+          <td class="pt-5 fs-4">200 $</td>
+     
+          <td class="pt-5 "><button class="btn btn-outline-success">Remove</button></td>
+        </tr>
+      
+      </tbody>
+     </table>
+      </section>
+
+
+      <footer class="updateFooter py-4 mt-5">
+        <div class="container  py-5 px-5 ">
+            <div class="row g-3 text-white" >
+                <div class="col-md-4">
+                <h4>Get to Know Us</h4>
+                <a href=""> <p class="ms-2">About Amazon</p></a>
+                <a href=""> <p class="ms-2">About Amazon</p></a>
+              </div>
+            <div class="col-md-4">
+              <h4>Shop with Us</h4>
+              <a href=""> <p class="ms-2">Your Account</p></a>
+              <a href=""> <p class="ms-2">Your Orders</p></a>
+              <a href=""> <p class="ms-2">Your Addresses</p></a>
+              <a href=""> <p class="ms-2">profile</p></a>
+
+            </div>
+       
+            <div class="col-md-4 ">
+              <h4>sign information</h4>
+             <a href=""> <p class="ms-2">profile</p></a>
+          <a href="">       <p class="ms-2">sign up</p></a>
+             <a href=""> <p class="ms-2">sign in</p></a>
+           <a href="">   <p class="ms-2">sign out</p></a>
+             
+            </div>
+        </div>
+    </div>
+    </footer>
+
+
+
+
+
+    
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    
+    <script src="../JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="../JS/dark-mode.js"></script>
+    <script src="../JS/jq.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+</html>
