@@ -54,4 +54,7 @@ background-color:#24a1d7;
 .dark-mode #pills-tab .ll::after{
     background-color: #dfdfdf;
 }
-
+.dark-mode #btnUp{
+    background-color: #fff;
+    color: #41819c;
+}

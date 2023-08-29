@@ -41,7 +41,7 @@
   $(document).ready(function(){
     $('.slickSlider').slick({
         infinite: true,
-        autoplay:true,
+        // autoplay:true,
         slidesToShow: 5,
         slidesToScroll: 1
     });
@@ -89,9 +89,8 @@ $(".sideBar").css("right",- sideBarWidth)
   });
   colorBox.click(function(e){
   let btnColor=  $(e.target).css("backgroundColor")
-    $(".Color ,btn").css('color' ,btnColor)
+    $(".Color ,btn ").css('color' ,btnColor)
   })
-  
 
 
 
