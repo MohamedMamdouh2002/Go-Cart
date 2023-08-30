@@ -27,7 +27,26 @@
     gap: 20px;
   }
   
- 
+  .slickSlider .item {
+    height: 70px !important;
+    width: 199px;
+    padding-top: 15px;
+    padding: 6px;
+}
+
+
+
+.slider
+{
+    background-color: #fff;
+    width: 98%;
+    padding: 10px;
+    margin: auto;
+}
+.lay-icon i{
+  width: 22px !important;
+  height: 22px !important;
+}
   }
 /* 
   @media (min-width: 1400px) {

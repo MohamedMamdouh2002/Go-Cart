@@ -9,24 +9,23 @@
     $(".headerCaption1").animate({width:"30%"},1000);
     // $(".headerCaption1").animate({height:"100px"},1000);
 
-
-
-
+    
+    
     let sectionOffset=$(".headScroll").offset().top
     // console.log(sectionOffset);
     $(window).scroll(function(){
-    let windowScroll=$(window).scrollTop();
-    if(windowScroll>sectionOffset){
+      let windowScroll=$(window).scrollTop();
+      if(windowScroll>sectionOffset){
         $('.navbar1').css("backgroundColor","rgb(35, 99, 112)")
         $('#btnUp').fadeIn(500)
     }
     else{
-        $('.navbar1').css("backgroundColor","rgba(0,0,0,0.7)")
-        $('#btnUp').fadeOut(500)
-
+      $('.navbar1').css("backgroundColor","rgba(0,0,0,0.7)")
+      $('#btnUp').fadeOut(500)
+      
     }
   })
-
+     
   $('#btnUp').click(function(){
     $('html,body').animate({scrollTop:0},200)
   })
@@ -41,7 +40,7 @@
   $(document).ready(function(){
     $('.slickSlider').slick({
         infinite: true,
-        // autoplay:true,
+        autoplay:true,
         slidesToShow: 5,
         slidesToScroll: 1
     });

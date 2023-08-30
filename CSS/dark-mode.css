@@ -48,6 +48,9 @@ background-color: #040404;
 .dark-mode .detailsBtn{
 background-color: #8b8b8b;
 }
+.dark-mode .category1{
+background-color: #000000;
+}
 .dark-mode .updateProfile .darkBtn{
 background-color:#24a1d7;
 }
