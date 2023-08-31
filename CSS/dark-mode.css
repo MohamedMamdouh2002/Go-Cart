@@ -58,6 +58,9 @@ background-color:#24a1d7;
     background-color: #dfdfdf;
 }
 .dark-mode #btnUp{
-    background-color: #fff;
+    background-color: #dfdfdf;
     color: #41819c;
+}
+.dark-mode .slick-prev:before, .dark-mode .slick-next:before{
+    color: #dfdfdf;
 }

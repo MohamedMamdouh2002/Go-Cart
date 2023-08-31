@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="55.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/all.css">
     <link rel="stylesheet" href="CSS/slick.css"> 
     <link rel="stylesheet" href="CSS/slick-theme.css"> 
-    <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
-    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/media.css">
     <link rel="stylesheet" href="CSS/dark-mode.css" id="dark-mode">
     <link rel="stylesheet" href="CSS/skitter.css">
     <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="shortcut icon" href="55.ico" type="image/x-icon">
     <title>Go Cart</title>
 </head>
-<body id="body" class="Color ofhiden">
+<body id="body" class="Color  ofhiden">
   <!-- start loading -->
   <section class="loading1">
 
@@ -27,36 +25,48 @@
   <!-- start nav  -->
   <nav class="navbar navbar1 navbar-expand-lg fixed-top  ">
     <div class="container ">
-          <!-- <div class="w-100 bg-info fixed-top"> n</div> -->
-          <a class="navbar-brand nav-name text-white" href="#">GO CART</a>
+          <a class="navbar-brand nav-name text-white licolor" href="#">GO CART</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto gap-3 mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto gap-4 mb-0 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link licolor" aria-current="page" href="#Home">Home</a>
               </li>
              
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle licolor " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  category
+         
+              <li class="nav-item ">
+                <a class="nav-link licolor" href="#">Contact Us</a>
+
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link licolor" href="#">About Us</a>
+
+              </li>
+            
+            </ul> 
+          
+            <ul class="d-flex  gap-3 list-unstyled  licolor  my-auto  ms-auto ">
+              <li>
+                <a href="#" class="licolor">
+
+                  <i class="fas fa-search search d-block  "></i>
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Electronics</a></li>
-                  <li><a class="dropdown-item" href="#">Fashion</a></li>
-                  <li><a class="dropdown-item" href="#">Home and Kitchen</a></li>
-                  <li><a class="dropdown-item" href="#">Beauty and Personal care</a></li>
-                  <li><a class="dropdown-item" href="#">Sports and Outdoors</a></li>
-                  <li><a class="dropdown-item" href="#">Books and Media</a></li>
-                  <li><a class="dropdown-item" href="#">Automotive</a></li>
-                  <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
-                               
-                </ul>
-              </li> -->
+                <input type="search" class="form-control d-none search1 ps-2" placeholder="search..">
+                
+                
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link licolor"   href="Html/cart.html">
+                   <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+              </li>
+              
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  My account
+                  <img src="Image/home.png" class="acc border" alt="" >
+                  
                 </a>
                 <ul class="dropdown-menu licolor">
                   <li><a class="dropdown-item " href="Html/updateProfile.html">profile</a></li>
@@ -64,38 +74,12 @@
                   
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link licolor"   href="Html/cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
-              </li>
-              <li class="nav-item mt-2">
+              <li class="nav-item mt-1">
                 <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
                 <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
               </li>
-
-                   
-            
-            </ul> 
-            <form class="w-50" role="search">
-              
-              <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
-              <!-- <button class="btn btn-outline-warning text-white" type="submit">Search</button> -->
-          
-            </form>
-            <ul class="d-flex gap-3 list-unstyled licolor  mt-2 ms-2 ms-auto ">
-              <li>
-                <a class=" text-decoration-none licolor" href="Html/SignUp.html">
-
-                  sign Up
-                </a> 
-              </li>
-              <li>
-                <a  class=" text-decoration-none licolor" href="Html/SignIn.html">
-
-                   Log in
-                </a>           
-              </li>
             </ul>
-   
+              
 
            
 
@@ -110,42 +94,25 @@
 
         <!-- start landing -->
        <header id="Home" class="">
-        <div class="row homeRow">
-          <div class="col-md-12 headerLayover">
-            <div class="headerCaption" id="headerCaption">
-                <div class="headerCaption1 col-md-1 ps-3 " id="headerCaption1">
-                  <span id="element" class="fs-6 font-monospace   ">
-                  
-                  </span>
-                </div>
-  
-            </div>
-            
-            <a href="#sec2">
-                 <div class="headScroll ">
-                  <i class="fa-solid fa-circle-arrow-up headScroll"></i>
-              </div> 
-              </a>
-              <div class="sideBar">
-                <div class="sideBar1">
-                  <h4>choose color</h4>
-                  <span class="color-box"></span>
-                  <span class="color-box"></span>
-                  <span class="color-box"></span>
-                  <span class="color-box"></span>
-                  <span class="color-box"></span>
-                </div>
-                
-                <i class="fas fa-gear"></i>
+         <div class=" px-5 head  headerLayover">
+
+              <div class="headCaption w-100  ">
+                  <h1 class="fs-2 fw-bolder  ">Welcome To Go Cart</h1>
+                  <p class="fs-3 n">
+                    exclusive collection for everyone ... 
+                  We are one of the best sites in the Middle East for electronic sales. Visit us and try it</p>     
+                  <div class="d-flex gap-2">
+                    <button class="btn2 fw-bold">Explore Now</button>
+                  </div>
               </div>
-            
-        </div>
-        </div>
-        <button class="btn rounded-3" id="btnUp">
-          <i class="fas fa-arrow-up btnUp"></i>
-        </button>
-          
-        
+            <div class="headImg w-100  ">
+              <img src="./Image/home.png"class="w-100 img" alt="">
+              <!-- <img src="blob-h aikei (1).png"class="svg" alt=""> -->
+            </div>
+          </div>
+          <button class="btn rounded-3" id="btnUp">
+            <i class="fas fa-arrow-up btnUp"></i>
+          </button>
       </header>
         <!-- end landing -->
 
@@ -187,18 +154,15 @@
   <div class="skitter skitter-large ">
     <ul>
       <li>
-        <a href="#cut"><img  src="Image/cyber-monday-shopping-sales.jpg" class="cut " /></a>
-        <div class="label_text"><p>cut</p></div>
+        <a href="#blindHeight"><img  src="Image/cyber-monday-shopping-sales.jpg" class="blindHeight" /></a>
         
       </li>
       <li>
             <a href="#glassCube"><img src="Image/WhatsApp Image 2023-08-08 at 9.03.15 AM.jpeg" class="glassCube" /></a>
         
-            <div class="label_text"><p>swapBlocks</p></div>
           </li>
           <li>
             <a href="#cubeSpread"><img src="Image/digital-wardrobe-transparent-screen.jpg" class="cubeSpread" /></a>
-            <div class="label_text"><p>swapBarsBack</p></div>
 
           </li>
           <li>
@@ -491,347 +455,146 @@
       
       <section id="Works" class="py-5">
         <div class=" pt-5">
-          <h2 class="work-after text-center fs-1 fw-bolder">Fashion</h2>
+          <h2 class="work-after text-center fs-1">Fashion</h2>
         </div>
-        <ul  data-bs-spy="scroll" class="nav nav-pills mb-3 py-5 d-flex justify-content-center align-items-center" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active ll" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-              <p>All</p></button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link ll" id="pills-Brand-tab" data-bs-toggle="pill" data-bs-target="#pills-Brand" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><p>Men</p></button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link ll" id="pills-Design-tab" data-bs-toggle="pill" data-bs-target="#pills-Design" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><p>Women</p></button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link ll" id="pills-Graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-Graphic" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><p>Kids</p></button>
+        <ul class="list-unstyled mb-3 py-5">
+          <li class="d-flex gap-2  justify-content-center align-items-center">
+            <button class="btn1 btn-color rounded-5 mixitup-control-active" data-filter="all">All</button>
+            <button class="btn1 btn-color rounded-5" data-filter=".Men">Men</button>
+            <button class="btn1 btn-color rounded-5" data-filter=".Women">Women</button>
+            <button class="btn1 btn-color rounded-5" data-filter=".Kids">Kids</button>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="52.jpeg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-      
-      
-                        <h4 class="text-black">Plain T-shirt</h4>
-                        <div class="lay-icon">
-      
-                          <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="Html/productDetails.html">
+        <div class="container conRow" >
+          <div class="row">
+            <div class="col-md-6 col-lg-4 p-2 mix Men Kids">
+              <div class="port">
+                <img class="w-100" src="52.jpeg" alt="">
+                <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
+                  <div class="lay-text">
+  
+  
+                    <h4 class="text-black">Plain T-shirt</h4>
+                    <div class="lay-icon">
+  
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="Html/productDetails.html">
 
-                          <i class="fa-solid fa-circle-info"></i>
-                        </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/2.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-      
-                        <h4 class="text-black">WEB DESIGN</h4>
-      
-                        <div class="lay-icon">
-      
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a href="Html/productDetails.html">
-
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/3.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-      
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-      
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a href="Html/productDetails.html">
-
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/4.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-      
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a href="Html/productDetails.html">
-
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/5.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-      
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-      
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a href="Html/productDetails.html">
-
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/6.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-      
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-      
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a href="Html/productDetails.html">
-
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>                        </div>
-                      </div>
+                      <i class="fa-solid fa-circle-info"></i>
+                    </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade " id="pills-Brand" role="tabpanel" aria-labelledby="pills-Brand-tab">
-            <div class="container">
-              <div class="row">
-           
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/4.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-      
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-      
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a href="Html/productDetails.html">
+            <div class="col-md-6 col-lg-4 p-2 mix Women">
+              <div class="port">
+                <img class="w-100" src="imgs/portfolio/2.jpg" alt="">
+                <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
+                  <div class="lay-text">
+  
+                    <h4 class="text-black">WEB DESIGN</h4>
+  
+                    <div class="lay-icon">
+  
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <a href="Html/productDetails.html">
 
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/6.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-      
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-      
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a href="Html/productDetails.html">
-
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-               
-               
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade " id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab">
-            <div class="container">
-              <div class="row">
-           
-            
-              
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/2.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-        
-        
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-        
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a href="Html/productDetails.html">
-
-                            <i class="fa-solid fa-circle-info"></i>
-                          </a>                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/5.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-        
-        
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-        
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <i class="fa-solid fa-circle-info"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-               
-      
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade " id="pills-Graphic" role="tabpanel" aria-labelledby="pills-Graphic-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 col-lg-4 p-2 ">
-      
-                <div class="port">
-                  <img class="w-100" src="imgs/portfolio/2.jpg" alt="">
-                  <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                    <div class="lay-text">
-      
-      
-                      <h4 class="text-black">WEB DESIGN</h4>
-                      <div class="lay-icon">
-      
-                        <i class="fa-solid fa-cart-shopping"></i>
                         <i class="fa-solid fa-circle-info"></i>
-                      </div>
-                    </div>
+                      </a>                        </div>
                   </div>
                 </div>
-                </div>
-                 
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/6.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-        
-        
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-        
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <i class="fa-solid fa-circle-info"></i>
-                        </div>
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2 mix Men">
+              <div class="port">
+                <img class="w-100" src="imgs/portfolio/3.jpg" alt="">
+                <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
+                  <div class="lay-text">
+  
+                    <h4 class="text-black">WEB DESIGN</h4>
+                    <div class="lay-icon">
+  
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <a href="Html/productDetails.html">
+
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>                        </div>
                   </div>
                 </div>
-            
-                <div class="col-md-6 col-lg-4 p-2 ">
-                  <div class="port">
-                    <img class="w-100" src="imgs/portfolio/5.jpg" alt="">
-                    <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
-                      <div class="lay-text">
-        
-        
-                        <h4 class="text-black">WEB DESIGN</h4>
-                        <div class="lay-icon">
-        
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <i class="fa-solid fa-circle-info"></i>
-                        </div>
-                      </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 p-2 mix Men ">
+              <div class="port">
+                <img class="w-100" src="imgs/portfolio/4.jpg" alt="">
+                <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
+                  <div class="lay-text">
+  
+                    <h4 class="text-black">WEB DESIGN</h4>
+                    <div class="lay-icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <a href="Html/productDetails.html">
+
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2 mix Kids ">
+              <div class="port">
+                <img class="w-100" src="imgs/portfolio/5.jpg" alt="">
+                <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
+                  <div class="lay-text">
+  
+                    <h4 class="text-black">WEB DESIGN</h4>
+                    <div class="lay-icon">
+  
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <a href="Html/productDetails.html">
+
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>               
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="col-md-6 col-lg-4 p-2 mix Men ">
+              <div class="port">
+                <img class="w-100" src="imgs/portfolio/6.jpg" alt="">
+                <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
+                  <div class="lay-text">
+  
+                    <h4 class="text-black">WEB DESIGN</h4>
+                    <div class="lay-icon">
+  
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <a href="Html/productDetails.html">
+
+                        <i class="fa-solid fa-circle-info"></i>
+                      </a>                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-      
-      
-        </div>
+        
+            
+          </div>
       </section>
         <!-- end section 6-->
 
   
         <!-- start section 7-->
 
-      <!-- <div class="owl-carousel owl-theme">
-        <div class="w-100"> <img src="Image/cyber-monday-shopping-sales.jpg" class="" alt=""> </div>
-        <div> <img src="Image/WhatsApp Image 2023-08-08 at 9.03.15 AM.jpeg" class="me-4" alt=""> </div>
-        <div> <img src="Image/cyber-monday-shopping-sales.jpg" alt=""> </div>
-        <div> <img src="Image/WhatsApp Image 2023-08-08 at 9.03.15 AM.jpeg" alt=""> </div>
-        <div> <img src="Image/cyber-monday-shopping-sales.jpg" alt=""> </div>
-        <div> <img src="Image/digital-wardrobe-transparent-screen.jpg" alt=""> </div>
-        <div> <img src="Image/WhatsApp Image 2023-08-08 at 9.03.15 AM.jpeg" alt=""> </div>
-        <div> <img src="Image/cyber-monday-shopping-sales.jpg" alt=""> </div>
-   
-    
-      </div> -->
-      <!-- end section 7-->
+        
 
-   <!-- <section class="beforefooter d-flex ">
-    <div class="beforefooterp">
-      <p class=" ms-2">we are confident we have provided all the best for you. Stay connect with us</p>
-    </div>
-    <div class="links d-flex gap-3 justify-content-center  ">
-          
-      <a href="https://www.facebook.com/">
-
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="https://www.twitter.com/">
-
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-      <a href="https://www.github.com/">
-
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a href="https://www.behance.com/">
-        <i class="fa-brands fa-behance"></i>
-
-      </a>
-   
-    </div>
-   </section> -->
 
       <footer class="updateFooter py-4">
         <div class="container  py-5 px-5">
-            <div class="row g-3 " >
+          <div class="row g-3 " >
                 <div class="col-md-4">
                 <h4>Get to Know Us</h4>
                 <a href=""> <p class="ms-2">About Amazon</p></a>
@@ -881,17 +644,19 @@
        
     </div>
     </footer>
-    
 
-      <script src="JS/bootstrap.bundle.min.js"></script>
+            <!-- end section 7-->
+
+    
+    <script src="JS/bootstrap.bundle.min.js"></script>
       <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
       <script src="JS/slick.js"></script>
-      <script src="JS/owl.carousel.min.js"></script>
-      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script src="JS/mixitup.min.js"></script>
+    
       <script src="JS/dark-mode.js"></script>
       <script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
       <script type="text/javascript" src="JS/jquery.skitter.min.js"></script>
       <script src="JS/jq.js"></script>
       <script src="JS/index.js"></script>
-</body>
+    </body>
 </html>
