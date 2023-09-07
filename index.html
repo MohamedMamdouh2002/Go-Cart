@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/media.css">
     <link rel="stylesheet" href="CSS/dark-mode.css" id="dark-mode">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
     <link rel="stylesheet" href="CSS/skitter.css">
     <link rel="stylesheet" href="CSS/Style.css">
     <title>Go Cart</title>
@@ -18,78 +19,125 @@
   <!-- start loading -->
   <section class="loading1">
 
-    <span class="loader"></span>    
+    <span class="text-white">
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </span>    
   </section>
+
+
+
 
   <!-- end loading -->
   <!-- start nav  -->
-  <nav class="navbar navbar1 navbar-expand-lg fixed-top  ">
-    <div class="container ">
-          <a class="navbar-brand nav-name text-white licolor" href="#">GO CART</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto gap-4 mb-0 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link licolor" aria-current="page" href="#Home">Home</a>
-              </li>
-             
-         
-              <li class="nav-item ">
-                <a class="nav-link licolor" href="#">Contact Us</a>
-
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link licolor" href="#">About Us</a>
-
-              </li>
-            
-            </ul> 
-          
-            <ul class="d-flex  gap-3 list-unstyled  licolor  my-auto  ms-auto ">
-              <li>
-                <a href="#" class="licolor">
-
-                  <i class="fas fa-search search d-block  "></i>
-                </a>
-                <input type="search" class="form-control d-none search1 ps-2" placeholder="search..">
+  <div class="d-flex flex-column fixed-top">
+    <nav class="navbar navbar1 navbar-expand-lg ">
+      <div class="container ">
+        <div class="">
+        <img src="Image/home.png" class="iconbg" alt="">
+        <a class="navbar-brand nav-name  " href="#"> <span class="Go-color">Go</span> CART</a>
+      </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="list-unstyled   mb-2 search-groub1">
+                <li class=" position-relative  ">
+                <i class="fas fa-search  search  position-absolute ps-2"></i>
                 
-                
+                <input type="search" class="form-control border border-1 border-dark rounded-0 nav1 ps-5" placeholder="search..">
               </li>
-              <li class="nav-item ">
-                <a class="nav-link licolor"   href="Html/cart.html">
-                   <i class="fa-solid fa-cart-shopping"></i>
+              </ul>
+              <div class="mt-2">
+                <h2>order</h2>
+              </div> 
+
+              <ul class="d-flex  gap-3 list-unstyled  licolor  my-auto  ms-auto icon-groub ">
+                <!-- <li class="search-groub1">
+                    <i class="fas fa-search search  licolor "></i>
+                
+                  <input type="search" class="form-control d-none search1 ps-2" placeholder="search..">
+                  
+                </li> -->
+                <li class="nav-item ">
+                  <a class="nav-link licolor"href="Html/cart.html">
+                     <i class="fa-solid fa-cart-shopping shop"></i>
+                    </a>
+                </li>
+                
+                <li class="nav-item dropdown  ms-2">
+                  <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="Image/home.png" class="acc border" alt="" >
+                    
                   </a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="Image/home.png" class="acc border" alt="" >
-                  
-                </a>
-                <ul class="dropdown-menu licolor">
-                  <li><a class="dropdown-item " href="Html/updateProfile.html">profile</a></li>
-                  <li><a class="dropdown-item " href="#">sign out</a></li>
-                  
-                </ul>
-              </li>
-              <li class="nav-item mt-1">
-                <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
-                <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
-              </li>
-            </ul>
-              
-
-           
-
-            
+                  <ul class="dropdown-menu licolor">
+                    <li><a class="dropdown-item " href="Html/updateProfile.html">profile</a></li>
+                    <li><a class="dropdown-item " href="#">sign out</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item mt-1">
+                  <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
+                  <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
+                </li>
+              </ul>
+                
+  
              
-            
-          </div>
-        </div>
+  
+              
+               
+              
+            </div>
+          </div>  
+        </nav>
+
+  <div class=" navbar2  navbar-expand h-25">
+    <div class="container ">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto gap-4 mb-0 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#Home">Home</a>
+          </li>
+         
+     
+          <li class="nav-item ">
+            <a class="nav-link  " href="#">Contact US</a>
+
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#">About Us</a>
+
+          </li>
         
-      </nav>
+        </ul>
+        <!-- <ul class="list-unstyled m-auto  mb-2 search-groub">
+          <li class=" position-relative  ">
+          
+          <input type="search" class="form-control rounded-0 nav1 " placeholder="search..">
+        </li>
+        </ul>  -->
+        <div class=" d-flex gap-4 DTCairocolor">
+          <div class="d-flex gap-2 ">
+              <img src="WhatsApp Image 2023-09-04 at 8.59.10 PM.jpeg" class="egyimg mt-2" alt=""> 
+              <p class=" DTCairo   pt-3">Delivery to Egypt</p>
+          </div>
+          
+         
+        </div>
+      
+       
+          
+
+       
+
+        
+         
+        
+      </div>
+    </div>
+  </div>
+    </div>
+
         <!-- end nav  -->
 
         <!-- start landing -->
@@ -121,37 +169,52 @@
         <section class="sec2 mt-5" id="sec2">
           <div class="container">
 
-          <div class="row">
-<div class="col-md-6 ">
+          <div class="d-flex justify-content-between row ">
+<div class="col-md-3">
 
   
-  <div class="category  rounded-3  w-50">
+  <div class="category  rounded-3 w-75 ">
     <div class="category1 ">
-      <h3 class="pt-3 ms-3">All Category</h3>
-      <hr class="text-info">
-      <p class="ms-3 w-25">Electronics</p>
-      <hr class="text-info">
-      <p class="ms-3 w-25">Fashion</p>
-      <hr class="text-info">
-      <p class="ms-3 w-75">Home and Kitchen</p>
-      <hr class="text-info">
-      <p class="ms-3 w-75">Beauty and Personal care</p>
-      <hr class="text-info">
-      <p class="ms-3 w-75">Sports and Outdoors</p>
-      <hr class="text-info">
-      <p class="ms-3 w-75">Books and Media</p>
-      <hr class="text-info">
-      <p class="ms-3 w-25">Automotive</p>
-      <hr class="text-info">
-      <p class="ms-3 pb-3 w-50">Pet Supplies</p>
-      
+            <a href="">      <h3 class="pt-3 ms-3">All Category</h3>
+            </a>    
+          <hr class="text-info">
+           <a href="">   <p class="ms-3 w-25">Electronics</p></a>
+           <hr class="text-info">
+           <a href="">      <p class="ms-3 w-25">Fashion</p>
+           </a> 
+            <hr class="text-info">
+            <a href="">
+              <p class="ms-3 w-75">Home and Kitchen</p>
+
+            </a>
+                 
+            <hr class="text-info">
+            <a href="">
+              <p class="ms-3 w-75">Beauty and Personal care</p>
+
+            </a>      
+            <hr class="text-info">
+            <a href="">
+              <p class="ms-3 w-75">Sports and Outdoors</p>
+
+            </a>      
+            <hr class="text-info">
+            <a href="">      <p class="ms-3 w-75">Books and Media</p>
+            </a>      
+            <hr class="text-info">
+            <a href="">
+              <p class="ms-3 w-25">Automotive</p>
+            </a>      
+            <hr class="text-info">
+            <a href="">
+              <p class="ms-3 pb-3 w-50">Pet Supplies</p>
+            </a>      
     </div>
     
   </div>
 </div>
-<div class="col-md-6 ">
-
-  <div class="skitter skitter-large ">
+<div class="col-md-9 ">
+  <!-- <div class="skitter skitter-large ">
     <ul>
       <li>
         <a href="#blindHeight"><img  src="Image/cyber-monday-shopping-sales.jpg" class="blindHeight" /></a>
@@ -172,8 +235,29 @@
             <a href="#swapBlocks"><img src="Image/digital-wardrobe-transparent-screen.jpg" class="swapBlocks" /></a>
           </li>
         </ul>
+      </div> -->
+
+      <div class="slide w-100">
+      <div class="slide-swp swiper mySwiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide1">
+                  <img src="slider-01.jpg" class="w-100" alt="">
+              </div>
+              <div class="swiper-slide swiper-slide2">
+                  <img src="slider-02.jpg" class="w-100"alt="">
+              </div>
+              <div class="swiper-slide swiper-slide3">
+                <img src="slider-03.jpg"class="w-100" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </div>
-    </div>
+
+
+
+
   </div>
 </div>
 
@@ -188,12 +272,12 @@
 
         <div class="container">
           <div class="slickSlider">  
-            
             <div class="item">
-              
               <img src="WhatsApp Image 2023-08-29 at 7.00.59 PM.jpeg" class="" alt="">
+              <P class="mt-1">T-SHIRT</P>
+              <p class="mt-1 slickPrice">50$</p>
               <div class="layer1">
-                <div class="layCard lay-icon">
+                <div class="layCard1 lay-icon1">
                   <i class="fa-solid fa-cart-shopping "></i>
                   <i class="fa-solid fa-info-circle"></i>
                 </div>
@@ -204,8 +288,10 @@
       
 
             <img src="Image/WhatsApp Image 2023-08-08 at 9.03.15 AM.jpeg" class=" " alt="">
+            <P class="mt-1">T-SHIRT</P>
+            <P class="mt-1 slickPrice">50$</P>
             <div class="layer1">
-              <div class="layCard lay-icon">
+              <div class="layCard1 lay-icon1">
                 <i class="fa-solid fa-cart-shopping "></i>
                 <i class="fa-solid fa-info-circle"></i>
               </div>
@@ -215,8 +301,10 @@
       
 
             <img src="Image/WhatsApp Image 2023-08-08 at 9.03.15 AM.jpeg" class="" alt="">
+            <P class="mt-1">T-SHIRT</P>
+            <P class="mt-1 slickPrice">50$</P>
             <div class="layer1">
-              <div class="layCard lay-icon">
+              <div class="layCard1 lay-icon1">
                 <i class="fa-solid fa-cart-shopping "></i>
                 <i class="fa-solid fa-info-circle"></i>
               </div>
@@ -227,8 +315,10 @@
       
 
             <img src="Image/WhatsApp Image 2023-08-08 at 9.03.15 AM.jpeg" class=" " alt="">
+            <P class="mt-1">T-SHIRT</P>
+            <P class="mt-1 slickPrice">50$</P>
             <div class="layer1">
-              <div class="layCard lay-icon">
+              <div class="layCard1 lay-icon1">
                 <i class="fa-solid fa-cart-shopping "></i>
                 <i class="fa-solid fa-info-circle"></i>
               </div>
@@ -238,8 +328,10 @@
           
 
             <img src="imgs/portfolio/1.jpg" class=" " alt="">
+            <P class="mt-1">T-SHIRT</P>
+            <P class="mt-1 slickPrice">50$</P>
             <div class="layer1">
-              <div class="layCard lay-icon">
+              <div class="layCard1 lay-icon1">
                 <i class="fa-solid fa-cart-shopping "></i>
                 <i class="fa-solid fa-info-circle"></i>
               </div>
@@ -250,8 +342,11 @@
        
 
             <img src="imgs/portfolio/2.jpg" class=" " alt="">
+            <P class="mt-1">T-SHIRT</P>
+            <P class="mt-1 slickPrice">50$</P>
             <div class="layer1">
-              <div class="layCard lay-icon">
+              <div class="layCard1 lay-icon1">
+                <h6></h6>
                 <i class="fa-solid fa-cart-shopping "></i>
               
                 <i class="fa-solid fa-info-circle"></i>
@@ -276,7 +371,7 @@
           <div class="container">
             <div class="slickSlider">  
               
-              <div class="item rounded-circle">
+              <div class="item rounded-circle ">
                 
                 <img src="WhatsApp Image 2023-08-29 at 7.00.59 PM.jpeg" class=" rounded-circle" alt="">
                 <div class="layer1 rounded-circle">
@@ -656,6 +751,7 @@
       <script src="JS/dark-mode.js"></script>
       <script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
       <script type="text/javascript" src="JS/jquery.skitter.min.js"></script>
+      <script src="JS/swiper-bundle.min.js"></script>
       <script src="JS/jq.js"></script>
       <script src="JS/index.js"></script>
     </body>

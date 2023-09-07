@@ -86,17 +86,17 @@ phone.addEventListener('keyup',function(){
 })
 
 //end validation sign up
-     function validate(element, regex) {
-         if (regex.test(element.value)) {
-           element.classList.add("is-valid");
-           element.classList.remove("is-invalid");
-           return true;
-         } else {
-           element.classList.add("is-invalid");
-           element.classList.remove("is-valid");
-           return false;
-         }
-       }
+        function validate(element, regex) {
+            if (regex.test(element.value)) {
+            element.classList.add("is-valid");
+            element.classList.remove("is-invalid");
+            return true;
+            } else {
+            element.classList.add("is-invalid");
+            element.classList.remove("is-valid");
+            return false;
+              }
+        }
 
 
 
