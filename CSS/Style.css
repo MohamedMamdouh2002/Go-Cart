@@ -236,6 +236,14 @@ font-weight: bolder;
 .navbar2{
     background-color:rgba(255, 255, 255,0.4);
 }
+.navbar3{
+    background-color:#cdcdcd;
+    border-bottom: 1px solid rgb(173, 160, 160);
+}
+.navbar4{
+    background-color:#1c506e;
+    border-bottom: 1px solid rgb(173, 160, 160);
+}
 /* end sign */
 /* start Validate sign */
 .massage{
@@ -962,3 +970,15 @@ opacity: 1;
 
 
 /* end dark */
+/* start contact */
+
+
+
+.contact{
+    margin-top: 150px;
+}
+.h5{
+    margin-top: 200px;
+    margin-bottom: 60px;
+}
+/* end contact */
