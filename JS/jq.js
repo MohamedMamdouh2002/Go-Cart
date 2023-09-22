@@ -110,6 +110,9 @@
 
 
   
+
+
+  
   $(".skitter-large").skitter({
       focus:true,
       dots:true ,
