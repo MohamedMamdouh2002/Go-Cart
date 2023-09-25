@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/Image/55.ico" type="image/x-icon">
     <title>Details</title>
     <link rel="stylesheet" href="../CSS/all.css">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
@@ -12,82 +13,120 @@
 <link rel="stylesheet" href="../CSS/Style.css">
 </head>
 <body id="body">
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+  <div class="d-flex flex-column fixed-top">
+    <nav class="navbar navbar1 navbar-expand-lg ">
+      <div class="container ">
+
+  <a href="../index.html" class="d-flex justify-content-center align-items-center text-decoration-none">
+    
+    <img src="../Assets/Image/logo.png" class="iconbg mt-1"  alt="">
+    <h1 class="navbar-brand nav-name"> <span class="Go-color">Go</span><span class="Cart-color ms-1">CART</span> </h1>
+  </a>
+
+     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="list-unstyled   mb-2 search-groub1">
+                <li class=" position-relative  ">
+                <i class="fas fa-search  search  position-absolute ps-2"></i>
+                
+                <input type="search" class="form-control border border-1 border-dark rounded-0 nav1 ps-5" placeholder="search..">
+              </li>
+              </ul>
+              <div class="mt-2">
+                <h2>order</h2>
+              </div> 
+
+              <ul class="d-flex  gap-3 list-unstyled  licolor  my-auto  ms-auto icon-groub ">
+    
+                <li class="nav-item ">
+                  <a class="nav-link licolor" href="Html/Cart1.html ">
+                     <i class="fa-solid fa-cart-shopping shop"></i>
+                    </a>
+                </li>
+                
+                <li class="nav-item dropdown  ms-2">
+                  <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../Assets/Image/user(female).png" class="acc border" alt="" >
+                    
+                  </a>
+                  <ul class="dropdown-menu licolor">
+                    <li><a class="dropdown-item " href="Html/updateProfile.html">profile</a></li>
+                    <li><a class="dropdown-item " href="#">sign out</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item mt-1">
+                  <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
+                  <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
+                </li>
+              </ul>
+                
+  
+             
+  
+              
+               
+              
+            </div>
+          </div>  
+        </nav>
+
+  <div class=" navbar4  navbar-expand h-25">
     <div class="container ">
-      <a class="navbar-brand nav-name text-white" href="../index.html">GO CART</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto gap-3 mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto gap-4 mb-0 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
           </li>
          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              category
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Electronics</a></li>
-              <li><a class="dropdown-item" href="#">Fashion</a></li>
-              <li><a class="dropdown-item" href="#">Home and Kitchen</a></li>
-              <li><a class="dropdown-item" href="#">Beauty and Personal care</a></li>
-              <li><a class="dropdown-item" href="#">Sports and Outdoors</a></li>
-              <li><a class="dropdown-item" href="#">Books and Media</a></li>
-              <li><a class="dropdown-item" href="#">Automotive</a></li>
-              <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
-              <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
-                           
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              My account
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item " href="../Html/updateProfile.html">profile</a></li>
-              <li><a class="dropdown-item " href="#">sign out</a></li>
-              
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white"   href="../Html/cart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
-          </li>
-          <li class="nav-item mt-2">
-            <i class="fa-solid fa-moon fs-3  d-block  text-white" id="moon" ></i>
-            <i class="fa-solid fa-sun fs-3  d-none text-white" id="sun" ></i>
-          </li>
+     
+          <li class="nav-item ">
+            <a class="nav-link  " href="Contact.html">Contact US</a>
 
-        </ul> 
-        <form class="d-flex" role="search">
-          
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-warning text-white" type="submit">Search</button>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="about.html">About Us</a>
+
+          </li>
+        
+        </ul>
       
-        </form>
+        <div class=" d-flex gap-4 DTCairocolor">
+          <div class="d-flex gap-2 ">
+              <img src="../Assets/Image/egypt.jpeg" class="egyimg mt-2" alt=""> 
+              <p class=" DTCairo   pt-3">Delivery to Egypt</p>
+          </div>
+          
+         
+        </div>
+      
+       
+          
+
+       
+
+        
+         
         
       </div>
     </div>
-    
-  </nav>
+  </div>
+    </div>
 
 <section class="details font-monospace">
   <div class="container">
-<h4 class="font-monospace ms-2">product </h4>
+<h4 class="font-monospace ms-2">Phone </h4>
 <hr class="w-100">
 <div class="d-flex ms-5 align-items-center  details-dflex">
-    <div class="det-img pe-5">
-        <img src="../Image/cyber-monday-shopping-sales.jpg" class="  w-100 h-100" alt="">
+    <div class="det-img  pe-5">
+        <img src="../Assets/Image/category/Home and Kitchen.jpg" class="  w-100 h-100" alt="">
       
     </div>
     <div class="det-text w-100">
-        <div class="d-flex align-items-center">
-
-            <h2>Name: </h2>
-            <p class="mt-2 fs-3 ms-1">  short</p>
-        </div>
-      <hr class="me-3">
+     
         <div class="d-flex align-items-center">
 
             <h2>category: </h2>
@@ -104,14 +143,14 @@
       <div class="d-flex align-items-center">
 
         <h2>price: </h2>
-        <p class="mt-3 fs-3 ms-1">  200$</p>
+        <p class="mt-3 fs-3 ms-1 text-success">  200$</p>
     </div>
 
 <hr class="me-3">
 
 <div class=" align-items-center">
 
-    <h2 class="font-monospace">Description : </h2>
+    <h2 class="font-monospace ">Description : </h2>
     <p class="mt-2 fs-3 ms-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem voluptate corporis eos vitae, soluta possimus praesentium ad laudantium? Molestias.</p>
 </div><hr class="me-3">
 
@@ -120,7 +159,7 @@
 </div>
 <div class="d-flex justify-content-center">
 
-    <button class="btn detailsBtn px-5 py-3">BUY NOW</button>
+    <button class="rounded-3 border-0 detailsBtn px-5 py-3 text-white">BUY NOW</button>
 </div>
 </div>
 
@@ -136,7 +175,7 @@
 
     <div class="">
       <div class="comImg d-flex ">
-        <img src="../Image/img.png" class=" border rounded-circle" alt="">
+        <img src="../Assets/Image/img.png" class=" border rounded-circle" alt="">
       <p class="mt-2 ms-2 font-monospace">Mohamed mamdouh</p>
     </div>
     <div class="comText ms-4">

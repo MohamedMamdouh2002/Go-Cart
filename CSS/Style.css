@@ -241,7 +241,7 @@ font-weight: bolder;
     border-bottom: 1px solid rgb(173, 160, 160);
 }
 .navbar4{
-    background-color:#1c506e;
+    background-color: var(--main-color);
 color: #fff;}
 /* end sign */
 /* start Validate sign */
@@ -545,14 +545,27 @@ background-color: #fff;
 color: #000;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 16px;
+border-radius: 10px;
+width: 280px;
 }
-.category p{
+.category p,.category .dropdown{
 
     transition: all 1s;
 }
 .category p:hover{
     color: #b0b0b0;
     transform: translateX(6px);
+}
+.category .dropdown-toggle:hover{
+    /* color: #fc0000; */
+    color: #b0b0b0;
+}
+.category .dropdown:hover{
+    transform: translateX(6px);
+
+}
+.category1{
+    border-radius: 20px;
 }
 .category1 a{
     text-decoration: none;
@@ -572,7 +585,7 @@ font-size: 16px;
 transform: scale(1.1);
  }
  .sec4{
-    background-image: url(../Image/home21.jpg);
+    background-image: url(../Assets//Image/home21.jpg);
     background-size: 100% 100%;
     width: 85%;
     margin: auto;
@@ -606,7 +619,9 @@ transform: scale(1.1);
     footer a:hover{
         color:#c9b4b4;
     }
-
+    .FOOTER-LINK{
+        width: 130px;
+    }
 
     .mixitup-control-active{
         background-color: #2e729a;
@@ -799,6 +814,9 @@ padding: 10px 0 0 0;}
 .slickSlider{
 padding-left:  50px;
 }
+.slickSlider1{
+padding-left:  20px;
+}
 .slick-prev:before, .slick-next:before {
    
     color: var(--main-color);
@@ -921,12 +939,38 @@ opacity: 1;
 
 
 
+/* start order */
+.order,.pay{
+    margin-top: 150px;
+}
+.borinput{
+    border: #c20000 !important;
+}
+
+.pay .card{
+    width:320px;
+}
+
+/* end order */
+/* start wish */
+
+.wishlist{
+    margin: 156px 0;
+}
+.wishimg1{
+    width: 150px;
+    height:  120px;
+    margin: 10px;
+}
+/* end wish */
+
 /* start cart */
 
 
 .cart{
     margin: 245px 0;
 }
+
 
 /* end cart */
 /* start details */
@@ -935,12 +979,13 @@ opacity: 1;
     
 }
 .details{
-    margin-top: 70px;
+    margin-top: 150px;
     margin-bottom: 170px;
 }
 
 .detailsBtn{
     background-color: darkcyan;
+
 }
 .comImg img{
     width: 40px;
@@ -950,8 +995,10 @@ opacity: 1;
 
 
 .det-img{
-    width: 600px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
+/* margin-left: -65px; */
+margin-top: -50px;
 }
 /* end details */
 

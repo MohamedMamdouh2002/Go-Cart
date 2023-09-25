@@ -26,6 +26,9 @@ color: #ffffff;
 .dark-mode .nav-item{
 color: #fff;
 }
+.dark-mode .dropdown-toggle1{
+color: #fff;
+}
 .dark-mode .slider{
     background-color: #41819c;
 }
@@ -49,7 +52,11 @@ background-color: #040404;
 background-color: #8b8b8b;
 }
 .dark-mode .category1{
-background-color: #000000;
+background-color: #41819c;
+border-radius: 10px;
+}
+.dark-mode .Cart-color{
+color: #000000;
 }
 .dark-mode .updateProfile .darkBtn{
 background-color:#24a1d7;

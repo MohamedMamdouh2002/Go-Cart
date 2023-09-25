@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Image/55.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/Image/55.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/all.css">
     <link rel="stylesheet" href="CSS/slick.css"> 
     <link rel="stylesheet" href="CSS/slick-theme.css"> 
@@ -35,9 +35,9 @@
 
   <a href="index.html" class="d-flex justify-content-center align-items-center text-decoration-none">
     
-    <img src="Image/home.png" class="iconbg mt-1"  alt="">
-    <h1 class="navbar-brand nav-name"> <span class="Go-color">Go</span> CART</h1>
-  </a>
+    <img src="Assets/Image/logo.png" class="iconbg mt-1"  alt="">
+    <h1 class="navbar-brand nav-name"> <span class="Go-color">Go</span><span class="Cart-color ms-1">CART</span> </h1>
+   </a>
 
      
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +65,7 @@
                 
                 <li class="nav-item dropdown  ms-2">
                   <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="Image/user(female).png" class="acc border" alt="" >
+                    <img src="Assets/Image/user(female).png" class="acc border" alt="" >
                     
                   </a>
                   <ul class="dropdown-menu licolor">
@@ -78,6 +78,13 @@
                   <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
                   <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
                 </li>
+                <li class="nav-item ms-4 pt-2">
+                  <a class=" text-decoration-none text-black" href="Html/SignIn.html" >
+
+                       Log in <i class="fa-solid fa-user"></i>
+                   
+                  </a> 
+                   </li>
               </ul>
                 
   
@@ -112,7 +119,7 @@
       
         <div class=" d-flex gap-4 DTCairocolor">
           <div class="d-flex gap-2 ">
-              <img src="Image/egypt.jpeg" class="egyimg mt-2" alt=""> 
+              <img src="Assets/Image/egypt.jpeg" class="egyimg mt-2" alt=""> 
               <p class=" DTCairo   pt-3">Delivery to Egypt</p>
           </div>
           
@@ -144,11 +151,16 @@
                     exclusive collection for everyone ... 
                   We are one of the best sites in the Middle East for electronic sales. Visit us and try it</p>     
                   <div class="d-flex gap-2">
-                    <button class="btn2 fw-bold">Explore Now</button>
+                    <button class="btn2 fw-bold">
+                      <a href="Html/Categories.html" class="text-decoration-none text-white">
+
+                        Explore Now
+                      </a>
+                    </button>
                   </div>
               </div>
             <div class="headImg w-100  ">
-              <img src="./Image/home.png"class="w-100 rounded-circle img" alt="">
+              <img src="Assets/Image/logo.png"class="w-100 rounded-circle img" alt="">
             </div>
           </div>
           <button class="btn rounded-3" id="btnUp">
@@ -159,68 +171,77 @@
 
         <!-- start section 2 -->
        
-        <section class="sec2 mt-5" id="sec2">
+  <section class="sec2 mt-5" id="sec2">
           <div class="container">
 
           <div class="d-flex justify-content-between row ">
-<div class="col-md-3">
+    <div class="col-md-3">
 
   
-  <div class="category  rounded-3 w-75 ">
-    <div class="category1 ">
-            <a href="">   
-                 <h3 class="pt-3 ms-3">All Category</h3>
-            </a>    
-          <hr class="text-info">
-           <a href="">  
-             <p class="ms-3 w-25">Electronics</p></a>
-           <hr class="text-info">
-           <a href="">  
-                <p class="ms-3 w-25">Fashion</p>
-           </a> 
-            <hr class="text-info">
-            <a href="">
-              <p class="ms-3 w-75">Home and Kitchen</p>
+      <div class="category    ">
+        <div class="category1">
+                <a href="Html/Categories.html">   
+                    <h3 class="pt-3 ms-3">All Category</h3>
+                </a>    
+              <hr class="text-info">
+              <a  href="Html/Categories.html">  
+                <p class="ms-3 w-25">Electronics</p></a>
+              <hr class="text-info">
+              
+              <div class="dropdown ms-3 w-25">
+                <a class=" dropdown-toggle dropdown-toggle1 " href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fashion
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="Html/Categories.html">Men</a></li>
+                  <li><a class="dropdown-item" href="Html/Categories.html">Women</a></li>
+                  <li><a class="dropdown-item" href="Html/Categories.html0">Kids</a></li>
+                </ul>
+              </div>
+                <hr class="text-info">
+                <a  href="Html/Categories.html">
+                  <p class="ms-3 w-75">Home and Kitchen</p>
 
-            </a>
-                 
-            <hr class="text-info">
-            <a href="">
-              <p class="ms-3 w-75">Beauty and Personal care</p>
+                </a>
+                    
+                <hr class="text-info">
+                <a href="Html/Categories.html">
+                  <p class="ms-3 w-75">Beauty and Personal care</p>
 
-            </a>      
-            <hr class="text-info">
-            <a href="">
-              <p class="ms-3 w-75">Sports and Outdoors</p>
+                </a>      
+                <hr class="text-info">
+                <a href="Html/Categories.html">
+                  <p class="ms-3 w-75">Sports and Outdoors</p>
 
-            </a>      
-            <hr class="text-info">
-            <a href="">      <p class="ms-3 w-75">Books and Media</p>
-            </a>      
-            <hr class="text-info">
-            <a href="">
-              <p class="ms-3 w-25">Automotive</p>
-            </a>      
-            <hr class="text-info">
-            <a href="">
-              <p class="ms-3 pb-3 w-50">Pet Supplies</p>
-            </a>      
+                </a>      
+                <hr class="text-info">
+                <a  href="Html/Categories.html">      <p class="ms-3 w-75">Books and Media</p>
+                </a>      
+                <hr class="text-info">
+                <a  href="Html/Categories.html">
+                  <p class="ms-3 w-25">Automotive</p>
+                </a>      
+                <hr class="text-info">
+                <a  href="Html/Categories.html">
+                  <p class="ms-3 pb-3 w-50">Pet Supplies</p>
+                </a>      
+        </div>
+        
+      </div>
     </div>
-    
-  </div>
-</div>
     <div class="col-md-9 ">
           <div class="slide w-100">
         <div class="slide-swp swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide1">
-                    <img src="Image/slider-01.jpg" class="w-100" alt="">
+                    <img src="Assets/Image/slider-01.jpg" class="w-100" alt="">
                 </div>
                 <div class="swiper-slide swiper-slide2">
-                    <img src="Image/slider-02.jpg" class="w-100"alt="">
+                    <img src="Assets/Image/slider-02.jpg" class="w-100"alt="">
                 </div>
                 <div class="swiper-slide swiper-slide3">
-                  <img src="Image/slider-03.jpg"class="w-100" alt="">
+                  <img src="Assets/Image/slider-03.jpg"class="w-100" alt="">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -241,12 +262,12 @@
         <!-- start section 3-->
 
         <h4 class="win mt-5">New Arrivals <hr></h4>
-      <section class="slider my-5">
+      <section class="slider my-5"> 
 
         <div class="container">
           <div class="slickSlider">  
             <div class="item1">
-              <img src="Image/imgs/labyop.jpeg" class="" alt="">
+              <img src="Assets/Image/labyop.jpeg" class="" alt="">
               <P class="mt-1">T-SHIRT</P>
               <p class="mt-1 slickPrice">50$</p>
               <a href="Html/productDetails.html" class="layer1" >
@@ -268,7 +289,7 @@
          <div class="item1">
       
 
-            <img src="Image/imgs/Phone-list-product-list-Aurora-427-x-600.png" class=" " alt="">
+            <img src="Assets/Image/Phone-list-product-list-Aurora-427-x-600.png" class=" " alt="">
             <P class="mt-1">T-SHIRT</P>
             <P class="mt-1 slickPrice">50$</P>
             <a href="Html/productDetails.html" class="layer1" >
@@ -289,7 +310,7 @@
          <div class="item1">
       
 
-            <img src="Image/imgs/phone.jpeg" class="" alt="">
+            <img src="Assets/Image/phone.jpeg" class="" alt="">
             <P class="mt-1">T-SHIRT</P>
             <P class="mt-1 slickPrice">50$</P>
             <a href="Html/productDetails.html" class="layer1" >
@@ -310,7 +331,7 @@
          <div class="item1">
       
 
-            <img src="Image/imgs/Watch.jpg" class=" " alt="">
+            <img src="Assets/Image/Watch.jpg" class=" " alt="">
             <P class="mt-1">T-SHIRT</P>
             <P class="mt-1 slickPrice">50$</P>
             <a href="Html/productDetails.html" class="layer1" >
@@ -331,7 +352,7 @@
          <div class="item1">
           
 
-            <img src="Image/imgs/Redmi.jpeg" class=" " alt="">
+            <img src="Assets/Image/download.jpg" class=" " alt="">
             <P class="mt-1">T-SHIRT</P>
             <P class="mt-1 slickPrice">50$</P>
             <a href="Html/productDetails.html" class="layer1" >
@@ -353,7 +374,7 @@
          <div class="item1">
        
 
-            <img src="Image/imgs/shirt.jpg" class=" " alt="">
+            <img src="Assets/Image/shirt.jpg" class=" " alt="">
             <P class="mt-1">T-SHIRT</P>
             <P class="mt-1 slickPrice">50$</P>
             <a href="Html/productDetails.html" class="layer1" >
@@ -387,11 +408,11 @@
         <section class="slider my-5">
 
           <div class="container">
-            <div class="slickSlider">  
+            <div class="slickSlider slickSlider1">  
               
               <div class="item rounded-circle ">
                 
-                <img src="Image/imgs/labyop.jpeg" class=" rounded-circle" alt="">
+                <img src="Assets/Image/category/labyop.jpeg" class=" rounded-circle" alt="">
                 <a href="Html/Categories.html" class="layer1 rounded-circle text-decoration-none">
                   <div class="layCard lay-icon d-flex flex-column">
                     <h4 class="text-white">Electronics</h4>
@@ -402,7 +423,7 @@
            <div class="item rounded-circle">
         
   
-              <img src="Image/imgs/Fashion.jpeg" class="rounded-circle " alt="">
+              <img src="Assets/Image/category/Fashion.jpeg" class="rounded-circle " alt="">
               <a href="Html/Categories.html" class="layer1 rounded-circle text-decoration-none">
                 <div class="layCard lay-icon d-flex flex-column">
                   <h4 class="text-white">Fashion</h4>
@@ -412,7 +433,7 @@
            <div class="item rounded-circle">
         
   
-              <img src="Image/imgs/Home and Kitchen.jpg" class=" rounded-circle" alt="">
+              <img src="Assets/Image/category/Home and Kitchen.jpg" class=" rounded-circle" alt="">
               <a href="Html/Categories.html" class="layer1 rounded-circle text-decoration-none">
                 <div class="layCard lay-icon d-flex flex-column">
                   <h4 class="text-white">Home and Kitchen</h4>
@@ -422,7 +443,7 @@
            <div class="item rounded-circle">
         
   
-              <img src="Image/imgs/Beauty and Personal care.jpg" class=" rounded-circle" alt="">
+              <img src="Assets/Image/category/Beauty and Personal care.jpg" class=" rounded-circle" alt="">
               <a href="Html/Categories.html" class="layer1 rounded-circle text-decoration-none">
                 <div class="layCard lay-icon d-flex flex-column">
                   <h4 class="text-white">Personal care</h4>
@@ -432,7 +453,7 @@
            <div class="item rounded-circle">
         
   
-              <img src="Image/imgs/Sports and Outdoors.jpg" class=" rounded-circle" alt="">
+              <img src="Assets/Image/category/Sports and Outdoors.jpg" class=" rounded-circle" alt="">
               <a href="Html/Categories.html" class="layer1 rounded-circle text-decoration-none">
                 <div class="layCard lay-icon d-flex flex-column">
                   <h4 class="text-white">Sports</h4>
@@ -442,7 +463,7 @@
            <div class="item rounded-circle">
         
   
-              <img src="Image/imgs/Automotive.jpg" class=" rounded-circle" alt="">
+              <img src="Assets/Image/category/Automotive.jpg" class=" rounded-circle" alt="">
               <a href="Html/Categories.html" class="layer1 rounded-circle text-decoration-none">
                 <div class="layCard lay-icon d-flex flex-column">
                   <h4 class="text-white">Automotive</h4>
@@ -452,7 +473,7 @@
            <div class="item rounded-circle">
         
   
-              <img src="Image/imgs/Pet Supplies.webp" class=" rounded-circle" alt="">
+              <img src="Assets/Image/category/Pet Supplies.webp" class=" rounded-circle" alt="">
               <a href="Html/Categories.html" class="layer1 rounded-circle text-decoration-none">
                 <div class="layCard lay-icon d-flex flex-column">
                   <h4 class="text-white">Pet Supplies</h4>
@@ -469,7 +490,7 @@
           </div>
         </section>
         <!-- start section 4-->
-
+<!-- 
       <section class="cat1" id="cat"> 
         <h4 class="win  mb-5 ">Best Categories
           <hr class="">
@@ -480,7 +501,7 @@
                   <div class="card me-2" >
                     <div class="card1">
 
-                      <img src="Image/img2.png" class="card-img w-100" alt="...">
+                      <img src="Assets/Image/img2.png" class="card-img w-100" alt="...">
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -494,7 +515,7 @@
                   <div class="card me-2" >
                     <div class="card1">
 
-                      <img src="Image/cyber-monday-shopping-sales.jpg" class="card-img-top w-100" alt="...">
+                      <img src="Assets/Image/cyber-monday-shopping-sales.jpg" class="card-img-top w-100" alt="...">
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -508,7 +529,7 @@
                   <div class="card me-2" >
                     <div class="card1">
 
-                      <img src="Image/digital-wardrobe-transparent-screen.jpg" class="card-img-top w-100" alt="...">
+                      <img src="Assets/Image/digital-wardrobe-transparent-screen.jpg" class="card-img-top w-100" alt="...">
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -522,7 +543,7 @@
                   <div class="card me-2" >
                     <div class="card1">
 
-                      <img src="Image/WhatsApp Image 2023-08-08 at 9.03.15 AM.jpeg" class="card-img-top w-100" alt="...">
+                      <img src="Assets/Image/WhatsApp Assets/Image 2023-08-08 at 9.03.15 AM.jpeg" class="card-img-top w-100" alt="...">
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -553,7 +574,7 @@
               
             </div>
         </div>
-      </section> 
+      </section>  -->
         <!-- end section 4-->
 
         <!-- start section 5-->
@@ -584,12 +605,12 @@
           <div class="row">
             <div class="col-md-6 col-lg-4 p-2 mix Men Kids">
               <div class="port">
-                <img class="w-100" src="imgs/labyop.jpeg" alt="">
+                <img class="w-100" src="Assets/Image/img.png" alt="">
                 <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
                   <div class="lay-text">
   
   
-                    <h4 class="text-black">Plain T-shirt</h4>
+                    <h4 class="text-white">Plain T-shirt</h4>
                     <div class="lay-icon">
   
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -604,11 +625,11 @@
             </div>
             <div class="col-md-6 col-lg-4 p-2 mix Women">
               <div class="port">
-                <img class="w-100" src="imgs/pexels-pixabay-280250.jpg" alt="">
+                <img class="w-100" src="Assets/Image/pexels-pixabay-280250.jpg" alt="">
                 <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
                   <div class="lay-text">
   
-                    <h4 class="text-black">WEB DESIGN</h4>
+                    <h4 class="text-white">WEB DESIGN</h4>
   
                     <div class="lay-icon">
   
@@ -623,11 +644,11 @@
             </div>
             <div class="col-md-6 col-lg-4 p-2 mix Men">
               <div class="port">
-                <img class="w-100" src="imgs/phone.jpeg" alt="">
+                <img class="w-100" src="Assets/Image/home21.jpg" alt="">
                 <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
                   <div class="lay-text">
   
-                    <h4 class="text-black">WEB DESIGN</h4>
+                    <h4 class="text-white">WEB DESIGN</h4>
                     <div class="lay-icon">
   
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -642,11 +663,11 @@
   
             <div class="col-md-6 col-lg-4 p-2 mix Men ">
               <div class="port">
-                <img class="w-100" src="imgs/Redmi.jpeg" alt="">
+                <img class="w-100" src="Assets/Image/home21.jpg" alt="">
                 <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
                   <div class="lay-text">
   
-                    <h4 class="text-black">WEB DESIGN</h4>
+                    <h4 class="text-white">WEB DESIGN</h4>
                     <div class="lay-icon">
                       <i class="fa-solid fa-cart-shopping"></i>
                       <a href="Html/productDetails.html">
@@ -659,11 +680,11 @@
             </div>
             <div class="col-md-6 col-lg-4 p-2 mix Kids ">
               <div class="port">
-                <img class="w-100" src="imgs/shoes.png" alt="">
+                <img class="w-100" src="Assets/Image/home21.jpg" alt="">
                 <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
                   <div class="lay-text">
   
-                    <h4 class="text-black">WEB DESIGN</h4>
+                    <h4 class="text-white">WEB DESIGN</h4>
                     <div class="lay-icon">
   
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -678,11 +699,11 @@
             </div>
             <div class="col-md-6 col-lg-4 p-2 mix Men ">
               <div class="port">
-                <img class="w-100" src="imgs/shirt.jpg" alt="">
+                <img class="w-100" src="Assets/Image/slider-02.jpg" alt="">
                 <div class="layer text-center text-white d-flex align-items-center justify-content-center" >
                   <div class="lay-text">
   
-                    <h4 class="text-black">WEB DESIGN</h4>
+                    <h4 class="text-white">WEB DESIGN</h4>
                     <div class="lay-icon">
   
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -707,13 +728,16 @@
         
 
 
-      <footer class="updateFooter py-4">
+      <footer class="updateFooter py-4 text-white">
         <div class="container  py-5 px-5">
           <div class="row g-3 " >
-                <div class="col-md-4">
-                <h4>Get to Know Us</h4>
-                <a href=""> <p class="ms-2">About Amazon</p></a>
-                <div class="Social-Media">
+                <div class="col-md-4 ">
+                  
+                  <h4>Get to Know Us</h4>
+                  <div class="FOOTER-LINK  ">
+                    <a href=""> <p class="ms-2  ">About GO CART</p></a>
+                  </div>
+                    <div class="Social-Media">
                   <h5>Social Media</h5>
                   <div class="links d-flex gap-3 justify-content-start  ">
           
@@ -740,19 +764,24 @@
               </div>
             <div class="col-md-4">
               <h4>Shop with Us</h4>
-              <a href=""> <p class="ms-2">Your Account</p></a>
-              <a href=""> <p class="ms-2">Your Orders</p></a>
-              <a href=""> <p class="ms-2">Your Addresses</p></a>
-              <a href=""> <p class="ms-2">profile</p></a>
-
+              <div class="FOOTER-LINK  ">
+                
+                <a href="Html/order.html"> <p class="ms-2">Your Orders</p></a>
+                <a href="Html/Cart1.html"> <p class="ms-2">Your Cart</p></a>
+  
+                
+              </div>
             </div>
        
             <div class="col-md-4 ">
               <h4>sign information</h4>
-             <a href=""> <p class="ms-2">profile</p></a>
-          <a href="">       <p class="ms-2">sign up</p></a>
-             <a href=""> <p class="ms-2">sign in</p></a>
-           <a href="">   <p class="ms-2">sign out</p></a>
+              <div class="FOOTER-LINK  ">
+
+                <a href="Html/updateProfile.html"> <p class="ms-2">profile</p></a>
+                <a href="Html/SignUp.html">       <p class="ms-2">sign up</p></a>
+                <a href="Html/SignIn.html"> <p class="ms-2">sign in</p></a>
+        
+              </div>
              
             </div>
         </div>

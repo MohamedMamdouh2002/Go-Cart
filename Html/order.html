@@ -1,0 +1,260 @@
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/Image/55.ico" type="image/x-icon">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="../CSS/all.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/media.css">
+    <link rel="stylesheet" href="../CSS/dark-mode.css" id="dark-mode">
+<link rel="stylesheet" href="../CSS/Style.css">
+</head>
+<body id="body">
+  <div class="d-flex flex-column fixed-top">
+    <nav class="navbar navbar1 navbar-expand-lg ">
+      <div class="container ">
+
+  <a href="../index.html" class="d-flex justify-content-center align-items-center text-decoration-none">
+    
+    <img src="../Assets/Image/logo.png" class="iconbg mt-1"  alt="">
+    <h1 class="navbar-brand nav-name"> <span class="Go-color">Go</span><span class="Cart-color ms-1">CART</span> </h1>
+  </a>
+
+     
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="list-unstyled   mb-2 search-groub1">
+                <li class=" position-relative  ">
+                <i class="fas fa-search  search  position-absolute ps-2"></i>
+                
+                <input type="search" class="form-control border border-1 border-dark rounded-0 nav1 ps-5" placeholder="search..">
+              </li>
+              </ul>
+              <div class="mt-2">
+                <h2>order</h2>
+              </div> 
+
+              <ul class="d-flex  gap-3 list-unstyled  licolor  my-auto  ms-auto icon-groub ">
+    
+                <li class="nav-item ">
+                  <a class="nav-link licolor" href="Html/Cart1.html ">
+                     <i class="fa-solid fa-cart-shopping shop"></i>
+                    </a>
+                </li>
+                
+                <li class="nav-item dropdown  ms-2">
+                  <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../Assets/Image/user(female).png" class="acc border" alt="" >
+                    
+                  </a>
+                  <ul class="dropdown-menu licolor">
+                    <li><a class="dropdown-item " href="Html/updateProfile.html">profile</a></li>
+                    <li><a class="dropdown-item " href="#">sign out</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item mt-1">
+                  <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
+                  <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
+                </li>
+              </ul>
+                
+  
+             
+  
+              
+               
+              
+            </div>
+          </div>  
+        </nav>
+
+  <div class=" navbar4  navbar-expand h-25">
+    <div class="container ">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto gap-4 mb-0 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+          </li>
+         
+     
+          <li class="nav-item ">
+            <a class="nav-link  " href="Contact.html">Contact US</a>
+
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="about.html">About Us</a>
+
+          </li>
+        
+        </ul>
+      
+        <div class=" d-flex gap-4 DTCairocolor">
+          <div class="d-flex gap-2 ">
+              <img src="../Assets/Image/egypt.jpeg" class="egyimg mt-2" alt=""> 
+              <p class=" DTCairo   pt-3">Delivery to Egypt</p>
+          </div>
+          
+         
+        </div>
+      
+       
+          
+
+       
+
+        
+         
+        
+      </div>
+    </div>
+  </div>
+    </div>
+    <section class="order container  w-75">
+        <div class="row d-flex justify-content-between" >
+
+            <div class="col-md-8">
+                <div class="card w-100 py-3">
+                    <h5 class="text-danger mx-3">Add a new address</h5>
+                    <div class="mx-3 d-flex flex-column">
+
+                        <label for="select region " class="fw-bolder">City</label>
+                    <select name="select region" id="select region" class="rounded-2 w-75">
+                        <option value="">Cairo</option>
+                        <option value="">Giza</option>
+                        <option value="">	Alexandria</option>
+                        <option value="">Shubra El-Kheima</option>
+                        <option value="">Port Said</option>
+                        <option value="">Suez</option>
+                        <option value="">	Luxor</option>
+                        <option value="">al-Mansura</option>
+                        <option value="">El-Mahalla El-Kubra</option>
+                        <option value="">Tanta</option>
+                        <option value="">Asyut</option>
+                        <option value="">Ismailia</option>
+                        <option value="">Fayyum</option>
+                        <option value="">Zagazig</option>
+                        <option value="">Aswan</option>
+                        <option value="">Damietta</option>
+                        <option value="">Damanhur</option>
+                        <option value="">Beni Suef</option>
+                        <option value="">al-Minya</option>
+                        <option value="">	Qena</option>
+                        <option value="">Sohag	</option>
+                        <option value="">Hurghada</option>
+                        <option value="">Banha</option>
+                       
+                    </select>
+                    <label for="" class="fw-bolder mt-2">Full Name</label>
+                    <input type="text" class="w-75 rounded-2 ps-2">
+                    <label for=""class="fw-bolder mt-2">Phone Number</label>
+                    <input type="tel" class="w-75 rounded-2 ps-2">
+                    <label for=""class="fw-bolder mt-2">Address</label>
+                    
+                    <input type="text" class="w-75 my-2 rounded-2 ps-2" placeholder="Street address">
+                    <input type="text" class="w-75 rounded-2 ps-2"  placeholder=" building number,floor">
+                    <div class="d-flex my-2">
+                        <input type="checkbox" class="mb-3">
+                        <p>Make this my default address</p>
+                    </div>
+                    <div class="btn btn-danger w-50 my-4">use this address</div>
+                </div>
+            </div>
+            </div>   
+        <div class="col-md-4">
+            <div class="card py-3">
+                <h5 class="mx-4 fw-bolder">
+                                    Order Summary
+                </h5>
+                <div class="d-flex justify-content-between mx-4">
+                    <p>Items</p>
+                    <p>200$</p>
+                </div>
+                <div class="d-flex justify-content-between mx-4">
+                    <p>Shipping&handling</p>
+                    <p>----</p>
+                </div>
+                <div class="d-flex justify-content-between mx-4">
+                    <p></p>
+                    <p>----------------</p>
+                </div>
+                <div class="d-flex justify-content-between mx-4">
+                    <p>Total before tax</p>
+                    <p>----</p>
+                </div>
+                <hr class="mx-2">
+                <div class="d-flex justify-content-between mx-4">
+                    <h4 class="text-danger">Order total :</h4>
+                    <h4 class="fw-bolder text-success">60$</h4>
+                </div> 
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="updateFooter py-4 text-white">
+        <div class="container  py-5 px-5">
+          <div class="row g-3 " >
+                <div class="col-md-4 ">
+                  
+                  <h4>Get to Know Us</h4>
+                  <div class="FOOTER-LINK  ">
+                    <a href=""> <p class="ms-2  ">About GO CART</p></a>
+                  </div>
+                    <div class="Social-Media">
+                  <h5>Social Media</h5>
+                  <div class="links d-flex gap-3 justify-content-start  ">
+          
+                    <a href="https://www.facebook.com/">
+              
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com/">
+              
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.github.com/">
+              
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.behance.com/">
+                      <i class="fa-brands fa-behance"></i>
+              
+                    </a>
+                 
+                  </div>
+
+                </div>
+              </div>
+            <div class="col-md-4">
+              <h4>Shop with Us</h4>
+              <div class="FOOTER-LINK  ">
+                
+                <a href="Html/order.html"> <p class="ms-2">Your Orders</p></a>
+                <a href="Html/Cart1.html"> <p class="ms-2">Your Cart</p></a>
+  
+                
+              </div>
+            </div>
+       
+            <div class="col-md-4 ">
+              <h4>sign information</h4>
+              <div class="FOOTER-LINK  ">
+
+                <a href="Html/updateProfile.html"> <p class="ms-2">profile</p></a>
+                <a href="Html/SignUp.html">       <p class="ms-2">sign up</p></a>
+                <a href="Html/SignIn.html"> <p class="ms-2">sign in</p></a>
+        
+              </div>
+             
+            </div>
+        </div>
+       
+    </div>
+    </footer>
+</body>
+        </html>
