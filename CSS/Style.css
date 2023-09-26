@@ -640,21 +640,21 @@ border: none;
     .work-after{
         position: relative;
     }
-    .work-after::after{
+    /* .work-after::after{
         content: "";
         position: absolute;
         width: 7px;
         height: 7px;
-        background-color: black;
+        background-color: rgb(17, 87, 124);
         border-radius: 50%;
         bottom: 20%;
-    }
+    } */
     .work-after::before{
         content: "";
         position: absolute;
         width: 12%;
         height: 40%; 
-        background-image: url(../imgs/dots.png);
+        background-image: url(../Assets/Image/dots.png);
         background-repeat: repeat;
         top:70%;
         left: 44%;
@@ -801,7 +801,6 @@ padding: 10px 0 0 0;}
     padding-top: 15px;
     overflow: hidden;
     padding: 5px;
-    
     position: relative;
 }
 .item p{
@@ -813,6 +812,7 @@ padding: 10px 0 0 0;}
 
 .slickSlider{
 padding-left:  50px;
+height: 250px;
 }
 .slickSlider1{
 padding-left:  20px;
@@ -883,7 +883,7 @@ justify-content: center;
     overflow: hidden;
     gap: 3px;
 align-items: end;   
- /* margin-top:15px; */
+ margin-top:15px;
  right: -15%;
 bottom: 65%;
  z-index: 99996556656565;
@@ -901,6 +901,9 @@ bottom: 65%;
     bottom: 65%;
 }
 
+.itemdet{
+    bottom: -20px;
+    right:0px;}
 
 
 .item:hover .layer1{
@@ -942,6 +945,9 @@ opacity: 1;
 /* start order */
 .order,.pay{
     margin-top: 150px;
+}
+.pay{
+    margin-top: 190px;
 }
 .borinput{
     border: #c20000 !important;

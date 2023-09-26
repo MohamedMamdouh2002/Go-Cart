@@ -23,6 +23,10 @@ color: #ffffff;
 .dark-mode p {
 color: #ffffff;
 }
+.dark-mode option {
+color: #000000;
+}
+
 .dark-mode .nav-item{
 color: #fff;
 }

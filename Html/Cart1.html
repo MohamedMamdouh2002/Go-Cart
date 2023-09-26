@@ -133,15 +133,15 @@
                         
                             <tr>
                               <td >
-                                  <div class="d-flex justify-content-between align-items-center">
-                                      <img src="../Image/img.png" alt="@item.Name" class="mr-2" width="50" height="50">
+                                  <div class="d-flex justify-content-between align-items-center gap-1">
+                                      <img src="../Assets/Image/55.ico" alt="@item.Name" class="mr-2" width="50" height="50">
                                       <p class="text-black">Iphone13 pro</p>
                                       <div class="w-25">
                                       </div>
                                     </div>
                                   </td>
                                   <td class="pt-3">200$</td>
-                                  <td class=" py-3 d-flex justify-content-between align-items-center">
+                                  <td class=" py-4 d-flex justify-content-between align-items-center gap-1">
                                     
                                     <input type="number" id="Quantity" class="w-25" value="1" min="0" max="10"/>
                                 
@@ -155,15 +155,18 @@
                                     </div>
                                   </td>
                             </tr>
+                            <tr>
+                              <td colspan="3" class="fs-1 text-black">Total Price :550$</td>
+                            </tr>
                         
                     </tbody>
                 </table>
         </div>
         
-        <div class="border w-25 py-5 rounded-3 bg-opacity-10 bg-dark"><span class="fs-3 fw-bolder ms-4">Total Price:1000$</span> </div>
+        <!-- <div class="border w-25 py-5 rounded-3 bg-opacity-10 bg-dark"><span class="fs-3 fw-bolder ms-4">Total Price:1000$</span> </div> -->
         <div class="d-flex gap-2 pt-3">
 
-          <h4 class=""><a asp-route-totalCost="@Model.TotalPrice" style="background-color: #41819c;"asp-controller="Order" asp-action="PlaceOrder" class="btn text-white ">Checkout</a></h4>
+          <h4 class=""><a asp-route-totalCost="@Model.TotalPrice" href="order.html" style="background-color: #41819c;"asp-controller="Order" asp-action="PlaceOrder" class="btn text-white ">Checkout</a></h4>
           <h4 class="mt-2 h6"><a asp-controller="Home" asp-action="Index" href="../index.html"  class="">Continue Shopping</a></h4>
         </div>
         </div>
