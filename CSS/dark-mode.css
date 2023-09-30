@@ -36,7 +36,24 @@ color: #fff;
 .dark-mode .slider{
     background-color: #41819c;
 }
+.dark-mode .detailsBtn{
+    background-color: #fff;
+}
+.dark-mode .Go-color{
+    color: #1c506e;
+}
+.dark-mode .DTCairo{
+    color: #FFF;
+}
+
+
 .dark-mode label{
+color: #ffffff;
+}
+.dark-mode small{
+color: #ffffff;
+}
+.dark-mode span{
 color: #ffffff;
 }
 .dark-mode table{

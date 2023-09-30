@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Assets/Image/55.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/Image/logoo5.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/all.css">
     <link rel="stylesheet" href="CSS/slick.css"> 
     <link rel="stylesheet" href="CSS/slick-theme.css"> 
@@ -35,7 +35,7 @@
 
   <a href="index.html" class="d-flex justify-content-center align-items-center text-decoration-none">
     
-    <img src="Assets/Image/logo.png" class="iconbg mt-1"  alt="">
+    <img src="Assets/Image/logoo5.png" class="iconbg mt-1"  alt="">
     <h1 class="navbar-brand nav-name"> <span class="Go-color">Go</span><span class="Cart-color ms-1">CART</span> </h1>
    </a>
 
@@ -56,8 +56,8 @@
               </div> 
 
               <ul class="d-flex  gap-3 list-unstyled  licolor  my-auto  ms-auto icon-groub ">
-    
-                <li class="nav-item ">
+    <li>
+                <li class="nav-item ms-2 ">
                   <a class="nav-link licolor" href="Html/Cart1.html ">
                     <i class="fa-solid fa-cart-shopping shop"></i>
                   </a>
@@ -70,6 +70,10 @@
                 </a>          
               </li>
                 
+              <li class="nav-item mt-1 me-4">
+                  <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
+                  <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
+                </li>
                 <li class="nav-item dropdown  ms-0">
                   <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="Assets/Image/user(female).png" class="acc border" alt="" >
@@ -80,9 +84,6 @@
                     <li><a class="dropdown-item " href="#">sign out</a></li>
                     
                   </ul>
-                <li class="nav-item mt-1">
-                  <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
-                  <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
                 </li>
                 <li class="nav-item ms-4 pt-2">
                   <a class=" text-decoration-none text-black" href="Html/SignIn.html" >
@@ -113,7 +114,7 @@
          
      
           <li class="nav-item ">
-            <a class="nav-link  " href="Html/Contact.html">Contact US</a>
+            <a class="nav-link  " href="Html/Contact.html">Contact Us</a>
 
           </li>
           <li class="nav-item ">
@@ -145,6 +146,7 @@
   </div>
     </div>
 
+
         <!-- end nav  -->
 
         <!-- start landing -->
@@ -153,9 +155,11 @@
 
               <div class="headCaption w-100  ">
                   <h1 class="fs-2 fw-bolder  ">Welcome To Go Cart</h1>
-                  <p class="fs-3 n">
-                    exclusive collection for everyone ... 
-                  We are one of the best sites in the Middle East for electronic sales. Visit us and try it</p>     
+                      <p class="fs-3 n">
+                      
+                        Exclusive collection for everyone...We are  One of The best E-commerce sites in The Middle East
+                        .... Try it now
+                        </p>     
                   <div class="d-flex gap-2">
                     <button class="btn2 fw-bold">
                       <a href="Html/Categories.html" class="text-decoration-none text-white">
@@ -166,7 +170,7 @@
                   </div>
               </div>
             <div class="headImg w-100  ">
-              <img src="Assets/Image/logo.png"class="w-100 rounded-circle img" alt="">
+              <img src="Assets/Image/logoo5.png"class="w-100 rounded-circle img" alt="">
             </div>
           </div>
           <button class="btn rounded-3" id="btnUp">
@@ -174,10 +178,12 @@
           </button>
       </header>
         <!-- end landing -->
+     
 
-        <!-- start section 2 -->
-       
-  <section class="sec2 mt-5" id="sec2">
+
+
+        <!-- start section 1 -->
+        <section class="sec2 mt-5" id="sec2">
           <div class="container">
 
           <div class="d-flex justify-content-between row ">
@@ -262,193 +268,586 @@
 </div>
 
     </section>
+        <!-- end section 1-->
+    
+        <!-- start section 2 -->
+       
+
+
+
+    <section class="sale-sec container swiper mySwiper">
+
+          <div class="section-head">
+              <h4> 
+                <span class="section-onsale"> 
+                On Sale 
+              </span>
+              Products </h4>
+          </div>
+          
+          <div class="boxs swiper-wrapper">
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                    <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                          
+                      </ul>
+                  </div>
+  
+                  <a href="Html/productDetails.html" class="div-img">
+                                      <span class="discount bg-danger ">34%</span>
+
+                      <img src="Assets/Image/product/product-1.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-4.jpg" class="hover-img">
+                  </a>
+                  <div class="content">
+                      <a class="product-item-link "> Samsung 77 Inch QD-OLED Smart TV- Black Processor 4k </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                          <del>$125.00</del>
+                      </div>
+          
+                  </div>
+              </div>
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+                                      <span class="discount bg-danger">34%</span>
+
+                      <img src="Assets/Image/product/product-13.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-14.jpg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link">SODO SD-1004 Wireless, Wired Headphone Born To Music Built </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                          <del>$125.00</del>
+                      </div>
+          
+                  </div>
+              </div>
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+                         <span class="discount bg-danger">34%</span>
+
+                      <img src="Assets/Image/product/product-8.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-9.jpg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                          <del>$125.00</del>
+                      </div>
+          
+                  </div>
+              </div>
+  
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+                                      <span class="discount bg-danger">34%</span>
+
+                      <img src="Assets/Image/product/product-24.png" class="img-product">
+                      <img src="Assets/Image/product/product-25.png" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                          <del>$125.00</del>
+                      </div>
+          
+                  </div>
+              </div>
+  
+  
+            
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+                                      <span class="discount bg-danger">34%</span>
+
+                      <img src="Assets/Image/product/product18.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-16.jpg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                          <del>$125.00</del>
+                      </div>
+          
+                  </div>
+              </div>
+  
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+                                      <span class="discount bg-danger">34%</span>
+
+                      <img src="Assets/Image/product/product-17.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-19.png" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Alba Watch for Men, Quartz Movement, Strap-AG8L37X</a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                          <del>$125.00</del>
+                      </div>
+          
+                  </div>
+              </div>
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+                                      <span class="discount bg-danger">34%</span>
+
+                      <img src="Assets/Image/product/product-22.jpeg" class="img-product">
+                      <img src="Assets/Image/product/product-21.jpeg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                          <del>$125.00</del>
+                      </div>
+          
+                  </div>
+              </div>
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+                                      <span class="discount bg-danger">34%</span>
+
+                      <img src="Assets/Image/category/Fashion.jpeg" class="img-product">
+                      <img src="Assets/Image/product/product-23.jpeg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                          <del>$125.00</del>
+                      </div>
+          
+                  </div>
+              </div>
+  
+  
+  
+              
+  
+  
+          </div>
+  
+          <div class="">
+
+            <div class="swiper-button-next swiper-btn"></div>
+            <div class="swiper-button-prev swiper-btn"></div>
+          </div>
+  
+      </section>
 
      
         <!--end section 2 -->
+           <div class="container d-flex gap-2 my-5">
+          <div class="position-relative">
+            <img src="Assets/Image/advertisement/banner-5.jpg" class="w-100" alt="">
+            <span class="glass-hover"></span>
+            
+          </div>
+          <div class="position-relative">
+            <img src="Assets/Image/advertisement/banner-2.jpg" class="w-100" alt="">
+            <span class="glass-hover"></span>
+          </div>
+          <div class="position-relative">
+            <img src="Assets/Image/advertisement/banner-1.jpg" class="w-100" alt="">
+            <span class="glass-hover"></span>
+          </div>
+      
+        </div>
         <!-- start section 3-->
 
-        <h4 class="win mt-5">New Arrivals <hr></h4>
-      <section class="slider my-5"> 
+        <section class="sale-sec container swiper mySwiper">
+          
+          <div class="section-head">
+              <h4> 
+                <span class="section-onsale"> 
+                New 
+              </span>
+              Arrivals </h4>
+          </div>
+          
+          <div class="boxs swiper-wrapper">
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                    <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                          
+                      </ul>
+                  </div>
+  
+                  <a href="Html/productDetails.html" class="div-img">
 
-        <div class="container">
-          <div class="slickSlider  "> 
-            <div class="d-flex flex-column">
-
-              <div class="item1">
-                <img src="Assets/Image/labyop.jpeg" class="" alt="">
-              <a href="Html/productDetails.html" class="layer1" >
-              </a>     
-              <div class="layCard1 lay-icon1">
-                
-                <a href="Html/Cart1.html" class="text-decoration-none">
-                  
-                  <i class="fa-solid fa-cart-shopping "></i>
-                </a>
-                <a href="Html/wishlist.html" class="text-decoration-none">
-                  
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                
+                      <img src="Assets/Image/product/product-1.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-4.jpg" class="hover-img">
+                  </a>
+                  <div class="content">
+                      <a class="product-item-link "> Samsung 77 Inch QD-OLED Smart TV- Black Processor 4k </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                      </div>
+          
+                  </div>
               </div>
-            </div>
-            <div class=" itemdet">
-              <P class=" ">T-SHIRT</P>
-              <p class=" slickPrice">50$</p>
-            </div>
-          </div> 
-            <div class="d-flex flex-column">
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
 
-              <div class="item1">
-                
-                
-            <img src="Assets/Image/Phone-list-product-list-Aurora-427-x-600.png" class=" " alt="">
-            <P class="mt-1">T-SHIRT</P>
-            <P class="mt-1 slickPrice">50$</P>
-            <a href="Html/productDetails.html" class="layer1" >
-            </a>     
-            <div class="layCard1 lay-icon1">
+                      <img src="Assets/Image/product/product-13.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-14.jpg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link">SODO SD-1004 Wireless, Wired Headphone Born To Music Built </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                      </div>
+          
+                  </div>
+              </div>
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+
+                      <img src="Assets/Image/product/product-8.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-9.jpg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                      </div>
+          
+                  </div>
+              </div>
+  
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+
+                      <img src="Img/Hooded Shirt 1.png" class="img-product">
+                      <img src="Img/Hooded Shirt2.jpg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                      </div>
+          
+                  </div>
+              </div>
+  
+  
+            
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+
+                      <img src="Assets/Image/product/product18.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-16.jpg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                      </div>
+          
+                  </div>
+              </div>
+  
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+
+                      <img src="Assets/Image/product/product-17.jpg" class="img-product">
+                      <img src="Assets/Image/product/product-19.png" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Alba Watch for Men, Quartz Movement, Strap-AG8L37X</a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                      </div>
+          
+                  </div>
+              </div>
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+
+                      <img src="Assets/Image/product/product-22.jpeg" class="img-product">
+                      <img src="Assets/Image/product/product-21.jpeg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                      </div>
+          
+                  </div>
+              </div>
+  
+              <div class="box column product-item swiper-slide">
+  
+                  <div class="product-btn">
+                      <ul class="product-action">
+                          <li><a href="Html/wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                          <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>       
+                      </ul>
+                  </div>
+                  <div class="div-img">
+
+                      <img src="Assets/Image/category/Fashion.jpeg" class="img-product">
+                      <img src="Assets/Image/product/product-23.jpeg" class="hover-img">
+                  </div>
+                  <div class="content">
+                      <a class="product-item-link"> Original Mobile Android Dual SIM Smart Phone G3 </a>
+                      <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div class="price">
+                          <span>$120.00</span>
+                      </div>
+          
+                  </div>
+              </div>
+  
+  
+  
               
-              <a href="Html/Cart1.html" class="text-decoration-none">
-                
-                <i class="fa-solid fa-cart-shopping "></i>
-              </a>
-              <a href="Html/wishlist.html" class="text-decoration-none">
-                
-                <i class="fa-solid fa-heart"></i>
-              </a>
-              
-            </div>
+  
+  
           </div>
-          <div class=" itemdet">
-            <P class=" ">T-SHIRT</P>
-            <p class=" slickPrice">50$</p>
+  
+          <div class="">
+
+            <div class="swiper-button-next swiper-btn"></div>
+            <div class="swiper-button-prev swiper-btn"></div>
           </div>
-        </div>    
-        <div class="d-flex flex-column">
-
-          <div class="item1">
-            
-
-            <img src="Assets/Image/phone.jpeg" class="" alt="">
-            <P class="mt-1">T-SHIRT</P>
-            <P class="mt-1 slickPrice">50$</P>
-            <a href="Html/productDetails.html" class="layer1" >
-            </a>     
-            <div class="layCard1 lay-icon1">
-          
-                <a href="Html/Cart1.html" class="text-decoration-none">
-
-                    <i class="fa-solid fa-cart-shopping "></i>
-                </a>
-                <a href="Html/wishlist.html" class="text-decoration-none">
-
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-           
-            </div>
-         </div>
-         <div class=" itemdet">
-          <P class=" ">T-SHIRT</P>
-          <p class=" slickPrice">50$</p>
-        </div>
-        </div>
-        <div class="d-flex flex-column">
-
-          <div class="item1">
-            
-
-            <img src="Assets/Image/Watch.jpg" class=" " alt="">
-            <P class="mt-1">T-SHIRT</P>
-            <P class="mt-1 slickPrice">50$</P>
-            <a href="Html/productDetails.html" class="layer1" >
-            </a>     
-            <div class="layCard1 lay-icon1">
-          
-                <a href="Html/Cart1.html" class="text-decoration-none">
-
-                    <i class="fa-solid fa-cart-shopping "></i>
-                </a>
-                <a href="Html/wishlist.html" class="text-decoration-none">
-
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-           
-            </div>
-         </div>
-         <div class=" itemdet">
-          <P class=" ">T-SHIRT</P>
-          <p class=" slickPrice">50$</p>
-        </div>
-        </div>
-        <div class="d-flex flex-column">
-
-          <div class="item1">
-            
-
-            <img src="Assets/Image/download.jpg" class=" " alt="">
-            <P class="mt-1">T-SHIRT</P>
-            <P class="mt-1 slickPrice">50$</P>
-            <a href="Html/productDetails.html" class="layer1" >
-            </a>     
-            <div class="layCard1 lay-icon1">
-          
-                <a href="Html/Cart1.html" class="text-decoration-none">
-
-                    <i class="fa-solid fa-cart-shopping "></i>
-                </a>
-                <a href="Html/wishlist.html" class="text-decoration-none">
-
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-           
-            </div>
-          
-         </div>
-         <div class=" itemdet">
-          <P class=" ">T-SHIRT</P>
-          <p class=" slickPrice">50$</p>
-        </div>
-        </div>
-        <div class="d-flex flex-column">
-
-          <div class="item1">
-            
-
-            <img src="Assets/Image/shirt.jpg" class=" " alt="">
-            <P class="mt-1">T-SHIRT</P>
-            <P class="mt-1 slickPrice">50$</P>
-            <a href="Html/productDetails.html" class="layer1" >
-            </a>     
-            <div class="layCard1 lay-icon1">
-          
-                <a href="Html/Cart1.html" class="text-decoration-none">
-
-                    <i class="fa-solid fa-cart-shopping "></i>
-                </a>
-                <a href="Html/wishlist.html" class="text-decoration-none">
-
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-           
-            </div>
-          
-         </div>
-         <div class=" itemdet">
-          <P class=" ">T-SHIRT</P>
-          <p class=" slickPrice">50$</p>
-        </div>
-        </div>
-       
-       
-         
-        </div>
-      </div>
-    </section>
-        <!-- end section 3-->
+  
+      </section>
+     
+    <!-- end section 3-->
 
 
 
-        <h4 class="win mt-5">Top 10 Offers <hr></h4>
+        <h4 class="win mt-5">Categories <hr></h4>
         <section class="slider my-5">
 
           <div class="container">

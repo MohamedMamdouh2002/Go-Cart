@@ -140,39 +140,39 @@ Age.addEventListener('keyup',function(){
 
 
   Name.addEventListener('keyup',function(){
-  if(isNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isAgeValid()&&isPassValid()) {
+  if(isNameValid()&&isEmailValid()&&isPhoneValid()&&isAgeValid()) {
     btn.removeAttribute("disabled")
   }else{
     btn.disabled="true"
   }
 })
   email.addEventListener('keyup',function(){
-    if(isNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isAgeValid()&&isPassValid()) {
+    if(isNameValid()&&isEmailValid()&&isPhoneValid()&&isAgeValid()) {
       btn.removeAttribute("disabled")
     }else{
       btn.disabled="true"
     }})
   passWord.addEventListener('keyup',function(){
-    if(isNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isAgeValid()&&isPassValid()) {
+    if(isNameValid()&&isEmailValid()&&isPhoneValid()&&isAgeValid()) {
       btn.removeAttribute("disabled")
     }else{
       btn.disabled="true"
     }})
  rePassword.addEventListener('keyup',function(){
-  if(isNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isAgeValid()&&isPassValid()) {
+  if(isNameValid()&&isEmailValid()&&isPhoneValid()&&isAgeValid()) {
     if (rePassword.value === passWord.value){
     btn.removeAttribute("disabled")
   }}else{
     btn.disabled="true"
   }})
  phone.addEventListener('keyup',function(){
-  if(isNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isAgeValid()&&isPassValid()) {
+  if(isNameValid()&&isEmailValid()&&isPhoneValid()&&isAgeValid()) {
     btn.removeAttribute("disabled")
   }else{
     btn.disabled="true"
   }})
 Age.addEventListener('keyup',function(){
-  if(isNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isAgeValid()&&isPassValid()) {
+  if(isNameValid()&&isEmailValid()&&isPhoneValid()&&isAgeValid()) {
     btn.removeAttribute("disabled")
   }else{
     btn.disabled="true"

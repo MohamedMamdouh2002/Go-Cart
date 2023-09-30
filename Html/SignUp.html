@@ -30,24 +30,39 @@
                 <form action="SignIn.html"> 
                     <div class="col-sm-12 ">
                         <div class=" d-flex gap-2 col-12 px-5">
-                            <input type="text" id="f-Name" name="F-name" class="   mt-2 form-control" placeholder="First Name">
-                            <input type="text" id="l-Name" name="L-name" class=" mt-2 form-control" placeholder="Last Name">
+                            <div class="w-50">
+
+                                <input type="text" id="f-Name" name="F-name" class="   mt-2 form-control" placeholder="First Name">
+                                <p class="alert alertName1 d-none alert-danger w-100  mt-2">Name not valid *Mohamed</p>
+                            </div>
+                            <div class="w-50">
+                                
+                                <input type="text" id="l-Name" name="L-name" class=" mt-2 form-control" placeholder="Last Name">
+                                <p class="alert alertName2  d-none alert-danger w-100  mt-2">Name not valid *Mohamed</p>
+                            </div>
                         </div>
                         <div class="col-12 px-5">
                             <input type="email" id="email" name="email" class=" mt-3 form-control" placeholder="Email">
+                            <p class="alert alertEmail1  alert-danger w-100 d-none  mt-2">Email not valid *exemple@yyy.zzz </p>
+
                             <input type="tel" maxlength="11" id="phone" name="phone" class="  mt-3 form-control" placeholder="Phone">
+                            <p class="alert alertPhone1  alert-danger w-100 d-none  mt-2">phone not valid *^010-011-012-015 </p>
+
                             <input type="password" id="passWord" name="passWord" class="mb-1  mt-3 form-control"  placeholder="Password">
+                            <p class="alert alertPass1  alert-danger w-100 d-none  mt-2">Password not valid *^Mm123456 </p>
+                            
                             <!-- <p class="pass-text text-danger">Password must be at least 8 characters long.<i class="fa-solid fa-exclamation "></i></p>  -->
                             <input type="password" id="Re-password" name="Re-password" class="  mt-3 form-control" placeholder="Re-password">
+                            <p class="alert alertRePass1  alert-danger w-100 d-none  mt-2">Re-Password not valid  </p>
                         </div>
                         <div class=" d-flex justify-content-center mt-4">
-                            <button   id="btnSignUp" class="btTn btn-secondary btn  text-white mb-3  px-5 py-3">Sign up</button>
+                            <button   id="btnSignUp" disabled class="btTn btn-secondary btn  text-white mb-3  px-5 py-3">Sign up</button>
                         </div>
                         <p class="text-center  mb-1 fw-bold" >You have an account?  <a href="SignIn.html" class="text-dark text-decoration-none">Sign in</a> </p>
                         <hr>
                         <div class="btTn-Group col-12 ">
                             <button class="btTn1 f-color"><i class="fa-brands fa-facebook-f "></i></button>
-                            <button class="btTn1 g-color"><i class="fa-brands fa-google"></i></button>
+                            <button class="btTn1 g-color"><i class="fa-brands fa-google-plus-g"></i></button>
                             <button class="btTn1 t-color"><i class="fa-brands fa-twitter"></i></button>
                         </div>
                 </form>
@@ -59,7 +74,7 @@
     </div>
 </section>
     
- <div class="massage w-100 h-100 d-none justify-content-center align-items-center" id="massage">
+ <!-- <div class="massage w-100 h-100 d-none justify-content-center align-items-center" id="massage">
     <div class="massage-1 bg-white p-4 rounded-2 shadow-lg">
         <div class="d-flex justify-content-between">
             <div class="d-flex">
@@ -75,7 +90,7 @@
         <h6><i class="fa-regular fa-circle-right text-danger p-2"></i>Phone includes 11 Number</h6> 
         <h6><i class="fa-regular fa-circle-right text-danger p-2 "></i>It must be at least 8 characters long and contain an uppercase letter, a lowercase letter, and a superscript letter</h6> 
     </div>
-</div> 
+</div>  -->
 <script src="../JS/bootstrap.bundle.min.js"></script>
 <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
 <script src="../JS/jq.js"></script>

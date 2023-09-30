@@ -75,7 +75,7 @@
   $(document).ready(function(){
     $('.slickSlider').slick({
         infinite: true,
-        // autoplay:true,
+        autoplay:true,
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
@@ -227,6 +227,7 @@
         });
       
       
+      
         
         var swiper = new Swiper(".swip-with-img", {
           slidesPerView: 4,
@@ -263,6 +264,9 @@
             }
         });
         
+
+
+
  
       });
 

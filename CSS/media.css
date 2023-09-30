@@ -19,6 +19,9 @@
     .wishflex{
       flex-direction: column !important;
     }
+    .sale-sec{
+      width: 95%;
+    }
     .headCaption {
 margin-top: 160px !important;
 }

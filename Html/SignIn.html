@@ -32,15 +32,20 @@
                         <div class="position-relative">
                             <i class="fa-solid fa-user i-pos1"></i> 
                             <input type="email"id="logEmail" name="email" class="ms-2 mt-3 form-control ps-4 " placeholder="Email" >
+                            <p class="alert alertEmail2  alert-danger w-100 d-none  mt-2">Email not valid </p>
+
                         </div> 
                         <div class="position-relative">
                             <i class="fa-solid fa-lock i-pos2 " id="iconLog1"></i>   
-                            <input type="password" id="logPassWord" name="passWord" class=" ms-2 mt-3 ps-4 form-control"  placeholder="Password">             
+                            <input type="password" id="logPassWord" name="passWord" class=" ms-2 mt-3 ps-4 form-control"  placeholder="Password"> 
+                            <i class="fa-regular fa-eye i-pos3 " id="show"></i>            
+                            <!-- <i class="fa-regular fa-eye-slash i-pos3 d-block" id="show"></i> -->
                             <p class="forPass ms-3"><a href="">Forgot your password?</a></p>
-                            <!-- <p class="pass-text text-danger">Password must be at least 8 characters long.<i class="fa-solid fa-exclamation "></i></p>  -->
+                            <p class="alert alertPass2  alert-danger w-100 d-none  mt-2">Email not valid *exemple@yyy.zzz </p>
+
                         </div>
                         <div class=" d-flex justify-content-center mt-4 ">
-                            <button type="submit" id="btnSignIn" class="btTn btn-secondary btn text-white mb-3 px-5 py-3">Sign up</button>
+                            <button type="submit" id="btnSignIn"disabled class="btTn btn-secondary btn text-white mb-3 px-5 py-3">Sign up</button>
                         
                         </div>
                       <p class="text-center  mb-1 fw-bold ">You have an account? <a href="SignUp.html" class="text-dark text-decoration-none">Sign up</a> </p>
@@ -59,25 +64,8 @@
 </div>
     </div>
 </section>
-    
- <!-- <div class="massage w-100 h-100 d-none justify-content-center align-items-center" id="massage">
-    <div class="massage-1 bg-white p-4 rounded-2 shadow-lg">
-        <div class="d-flex justify-content-between">
-            <div class="d-flex">
-                <span class="rounded-circle span1"></span>
-                <span class="rounded-circle span2 mx-2"></span>
-                <span class="rounded-circle span3"></span>
-            </div>
-            <button class="btn  pt-0 border-0" onclick="closeMassage()"><i class="fa-solid fa-xmark"></i></button>
-        </div>
 
-        <p class="fw-bolder fs-56">Site Name or Url is not valid, Please follow the rules below :</p>
-        <h6><i class="fa-regular fa-circle-right text-danger p-2"></i> Name must contain at least 3 characters &first character is Capital </h6> 
-        <h6><i class="fa-regular fa-circle-right text-danger p-2"></i>Phone includes 11 Number</h6> 
-        <h6><i class="fa-regular fa-circle-right text-danger p-2 "></i>It must be at least 8 characters long and contain an uppercase letter, a lowercase letter, and a superscript letter</h6> 
-    </div>
-</div>   -->
- <div class="massage w-100 h-100 d-none justify-content-center align-items-center" id="massageLog">
+ <!-- <div class="massage w-100 h-100 d-none justify-content-center align-items-center" id="massageLog">
     <div class="massage-1 bg-white p-4 rounded-2 shadow-lg">
         <div class="d-flex justify-content-between">
             <div class="d-flex">
@@ -93,7 +81,7 @@
         <h6><i class="fa-regular fa-circle-right text-danger p-2"></i>Phone includes 11 Number</h6>  
         <h6><i class="fa-regular fa-circle-right text-danger p-2 "></i>It must be at least 8 characters long and contain an uppercase letter, a <p class="ms-4"> lowercase letter, and a superscript letter</p></h6> 
     </div>
-</div> 
+</div>  -->
 
     <script src="../JS/bootstrap.bundle.min.js"></script>
     <script src="../JS/code.jquery.com_jquery-3.7.0.min.js"></script>
