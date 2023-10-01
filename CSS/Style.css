@@ -31,6 +31,10 @@
     --main-color: rgb(35, 99, 112)
 }
 /* scroll */
+
+
+
+
 /*start nav */
 
 
@@ -365,6 +369,8 @@ display: flex;
 
 
 
+
+
 /* sec pro */
 
 
@@ -566,6 +572,17 @@ display: flex;
 /* sec pro */
 
 
+/* header::after{
+position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+background-color: #1c506e;
+top: 0;
+z-index: 0;
+clip-path: circle(40% at right 90%);
+} */
+
 header{
     /* background-image:url(../bg.jpeg); */
     height: 100vh;
@@ -575,6 +592,7 @@ header{
     background-size: 100% 100% ;
     background-repeat: no-repeat;
    
+    position: relative;
    
 }
 .headerLayover{
@@ -587,8 +605,10 @@ header{
 
 .headImg .img{
     position: relative;
-    width: 20px;
-    z-index: 6;  
+    /* width: 400px; */
+  
+    z-index: 55556; 
+
   
 }
 .acc{
@@ -599,6 +619,7 @@ header{
 .headImg:hover{
     animation-name: sm;
 animation-duration: .9s;
+z-index: 555555;
 animation-iteration-count: infinite;
 }
 @keyframes sm{
@@ -973,7 +994,7 @@ border: none;
  .links{
     margin: auto;
     padding: 4px 0;
-    border-bottom:none;
+    /* border-bottom:none; */
  }   
 .links i{
     width: 30px;
@@ -1153,7 +1174,29 @@ opacity: 1;
 
 
 
-/* start order */
+
+
+
+
+
+/* start about */
+.about{
+    margin-top: 145px;
+}
+.Abouth1{
+    position: absolute;
+    font-size: 40px;
+    top: 0px;
+    left: 0;
+    
+}
+.Aboutimg{
+    width: 400px;
+    height: 450px;
+}
+
+
+/* end about */
 .order,.pay{
     margin-top: 150px;
 }
