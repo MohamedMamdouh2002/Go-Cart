@@ -607,7 +607,7 @@ header{
     position: relative;
     /* width: 400px; */
   
-    /* z-index: 55556;  */
+    z-index: 0; 
 
   
 }
@@ -619,7 +619,7 @@ header{
 .headImg:hover{
     animation-name: sm;
 animation-duration: .9s;
-z-index: 555555;
+z-index: 0;
 animation-iteration-count: infinite;
 }
 @keyframes sm{
@@ -1179,6 +1179,7 @@ opacity: 1;
 
 
 
+
 /* start about */
 .about{
     margin-top: 145px;
@@ -1301,9 +1302,23 @@ margin-top: -50px;
 
 .contact{
     margin-top: 150px;
+    
 }
-.h5{
-    margin-top: 200px;
-    margin-bottom: 60px;
+.contactrow{
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: #03A9F4;
+        
+}
+.contactrow input{
+    height: 40px;
+    /* background-color: #03A9F4; */
+}
+.contactrow input:focus{
+outline: 0;
+}
+.contactimg{
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 
