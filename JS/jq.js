@@ -194,10 +194,12 @@
         var swiper = new Swiper(".sale-sec", {
           slidesPerView: 5,
           spaceBetween: 30,
-            autoplay: {
-              delay: 3000,
-              disableOnInteraction: false,
-            },
+            autoplay:false
+            //  {
+            //   delay: 3000,
+            //   disableOnInteraction: false,
+            // },
+            ,
             navigation: {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
@@ -265,11 +267,28 @@
         });
         
 
+        
+        
+        $("#cartList").slideUp(0);
+        
+      $("#Carticon").click(function(){
+        $("#cartList").slideToggle(5);
+      })
 
+   
+      let wishlistBtn = document.querySelectorAll(".addToWL");
+      wishlistBtn.forEach(item => {
+        item.onclick = function () {
 
- 
-      });
-
-
-
-
+          if (item.firstElementChild.classList.contains("text-danger")) {
+            item.firstElementChild.classList.remove("fas", "fa-heart", "text-danger");
+              item.firstElementChild.classList.add("far", "fa-heart");
+          }
+          else {
+              item.firstElementChild.classList.remove("far", "fa-heart");
+              item.firstElementChild.classList.add("fas", "fa-heart", "text-danger");
+          }
+        }
+        })
+      
+    });

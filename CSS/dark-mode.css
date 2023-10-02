@@ -45,6 +45,9 @@ color: #fff;
 .dark-mode .DTCairo{
     color: #FFF;
 }
+.dark-mode .cartList{
+    background-color: #23272F;
+}
 
 
 .dark-mode label{
