@@ -194,13 +194,12 @@
         var swiper = new Swiper(".sale-sec", {
           slidesPerView: 5,
           spaceBetween: 30,
-            autoplay:false
-            //  {
-            //   delay: 3000,
-            //   disableOnInteraction: false,
-            // },
-            ,
-            navigation: {
+            autoplay:
+              {
+               delay: 3000,
+               disableOnInteraction: false,
+             },
+                      navigation: {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             },
@@ -267,7 +266,7 @@
         });
         
 
-        
+        AOS.init();
         
         $("#cartList").slideUp(0);
         
