@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../CSS/dark-mode.css" id="dark-mode">
     <link rel="stylesheet" href="../CSS/Style.css">
 </head>
-<body>
+<body class="updateProfile">
   <div class="d-flex flex-column fixed-top">
     <nav class="navbar navbar1 navbar-expand-lg ">
       <div class="container ">
@@ -114,26 +114,44 @@
     </div>
   </div>
     </div>
-<section class="updateProfile pt-3">
-        <form action="" class=" w-70 mx-auto">
-          <div class="img-round mt-5 ">
-            
-            <img src="../photo1687992470.jpeg" class="w-100 m-auto imgUpdate mt-3" alt="">
+<section class="  pt-5">
+  <div class="container">
+    <div class="bg-opacity-10 bg-primary mb-5 rounded-5">
+        <div class=" row  ">
+          <h3 class="text-center pt-3 fs-1">Profile Details</h3>
+        <div class=" col-md-4 ">
+          <div class="img-round mt-5">
+            <img src="../Assets/Image/user(female).png" class="w-100 m-auto imgUpdate mt-3" alt="">
+          </div >
+        </div>
+        <div class="col-md-8 ">
+          <div class="">
           </div>
-          <div class="row homeRow">
-            <div class="col-10 px-md-5 mx-auto my-5">
-          
-                <div class="col-12  px-md-5">
-                <input type="text"  name="F-name" class="mt-3  form-control" placeholder="First Name">
-                <input type="text"  name="L-name" class=" mt-3 form-control" placeholder="Last Name">
-                <input type="email" id="email" name="email" class=" mt-3 form-control" placeholder="Email">
-                <input type="tel" maxlength="11" id="phone" name="phone" class="  mt-3 form-control" placeholder="Phone">
-                <input class="form-control-plaintext  text-white my-5 darkBtn " type="submit" value="Save" > 
-                
+          <div class=" homeRow px-5 mx-auto my-5">
+        
+             <div class="d-flex gap-2">
+
+               <input type="text"  name="L-name" class="mt-3  form-control" placeholder="First Name">
+               <input type="text"  name="F-name" class="mt-3  form-control" placeholder="Last Name">
               </div>
-            </div>
-            </div>
-        </form>
+              <input type="text"  name="F-name" class="mt-3  form-control" placeholder=" Username">
+              <input type="email" id="email" name="email" class=" mt-3 form-control" placeholder="Email">
+              <input type="tel" maxlength="11" id="phone" name="phone" class="  mt-3 form-control" placeholder="Phone">
+              <select name="" id="" class="form-control my-3">
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+              <input class="form-control-plaintext  text-white my-5 detailsBtn " type="submit" value="Save" > 
+              
+    
+          </div>
+          </div>
+      </div>
+    
+    </div>
+    
+  </div>
+      
 
 
 

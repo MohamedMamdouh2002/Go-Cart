@@ -26,8 +26,17 @@ color: #ffffff;
 .dark-mode option {
 color: #000000;
 }
+.dark-mode .admin option {
+color: #ffffff;
+}
+.dark-mode .cart .btn {
+color: #ffffff;
+}
 
 .dark-mode .nav-item{
+color: #fff;
+}
+.dark-mode .amount{
 color: #fff;
 }
 .dark-mode .dropdown-toggle1{
@@ -47,6 +56,9 @@ color: #fff;
 }
 .dark-mode .cartList{
     background-color: #23272F;
+}
+.dark-mode .Go-color1{
+color: #cecece;
 }
 
 

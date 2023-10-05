@@ -14,7 +14,7 @@
     <title>Add product</title>
 </head>
 
-<body Style="font-family: 'Prata', serif;">
+<body>
 
   <div class="d-flex flex-column fixed-top">
     <nav class="navbar navbar1 navbar-expand-lg ">
@@ -118,62 +118,213 @@
     </div>
   </div>
     </div>
-    <div class="container">
-        <div class="row mt-4">
+    <div class="container admin">
+      <div class="">
+      <div class="row p-5 mb-5 bg-primary bg-opacity-10  rounded-5">
+
+        <div class="col-md-6">
+         <div class="">
+           <label for="productName " class="fs-3"> Name:</label> 
+           <input type="text" id="addProductName" placeholder="Name" class=" form-control w-100 my-2">
+           <label for="productPrice "class="fs-3"> Price:</label> 
+         <input type="number" id="addProductPrice" placeholder="Price" class=" form-control w-100 my-2">
+         <div class="d-flex gap-1">
+
+           <!-- <label for="productDesc "class="fs-3 mt-4 ">Description :</label>   -->
+         <textarea type="text"id="addProductDesc" maxlength="350" placeholder="Description" class=" form-control w-100 my-2 py-5"></textarea>
+         <div class="img-upload mt-2 mb-2 col-md-4  p-0">
+           <input class="mb-3 " type="file" accept="image/*" id="p-i" hidden>
+           <label
+               class="p-4 border bg-success bg-opacity-10 rounded h-100 d-flex flex-column align-items-center justify-content-center text-black-50"
+               for="p-i"><i class="fas fa-cloud-upload-alt fs-1 text-black-50 mb-2"></i>Upload Image</label>
+              </div>
+            </div>
+ 
+        </div>
+
+
+        </div> 
+        <div class="col-md-6 ">
+          <div class="d-flex flex-column ">
+            <label for="productCategory "class="fs-3 me-2"> Category:</label>
+            <select name="hhhh" id=""  class="btn btn-outline-dark w-100 mt-1 text-start" >
+              <option value="">Electronics</option>
+              
+              <optgroup label="Fashion" class="text-primary">
+                <option value="">Men</option> 
+                <option value="">Women</option>
+                <option value="">Kids</option>
+              </optgroup>
+              
+              <option value="">Home and Kitchen
+              </option>
+              <option value="">Beauty and Personal care
+              </option>
+              <option value="">Sports and Outdoors
+              </option>
+              <option value="">Toys and Games
+              </option>
+              <option value="">Books and Media
+              </option>
+              <option value="">Automotive
+              </option>
+              <option value="">Pet Supplies
+              </option>
+              <option value="">Baby and kids</option>
+            </select>
+          </div>
+
+
+          <div class="">
+          
+            <span class="fs-3 me-2">color :</span>
+            <select name="hhhh" id=""  class="btn btn-outline-dark w-100 mt-1 text-start" >
+              <option value="">Red</option>
+              
+             
+              
+              <option value="">Blue
+              </option>
+              <option value="">yellow
+              </option>
+              <option value="">green
+              </option>
+              <option value="">black
+              </option>
+              <option value="">white
+              </option>
+            
+          
+            </select>
+            
+          </div>
+          <div class="">
+            <span class="fs-3 me-2">Size</span>
+            <select name="hhhh" id=""  class="btn btn-outline-dark w-100 mt-1 text-start" >
+              <option value="">Red</option>
+              
+             
+              
+              <option selected>Small</option>
+              <option value="1">medium</option>
+              <option value="2">Large</option>
+              <option value="2">XLarge</option>
+            
+          
+            </select>
+     
+          </div>
+          <div class=" d-flex justify-content-end mt-5">
+            <button class="detailsBtn text-white btn py-3 px-5 ">
+                Add Product
+            </button>
+        </div>
+        </div>
+      </div>
+
+      </div>
+       <!-- <div class="row mt-4">
             <h2 class="text-center mt-5 ">Add Product</h2>
             <form class="my-3 createprodut">
-                <div class="col-12 mt-1   ">
-                    <label for="productName " class="fs-3"> Name:</label> 
-                    <input type="text" id="addProductName" class=" form-control w-50 my-2">
-                    <label for="productPrice "class="fs-3"> Price:</label> 
-                    <input type="number" id="addProductPrice" class=" form-control w-50 my-2">
+                <div class="col-12 mt-1 d-flex gap-3  ">
+                 
                 </div>
                 
-                <label for="productDesc "class="fs-3 mt-4 ">Description :</label> 
-                <textarea type="text"id="addProductDesc" maxlength="350" class=" form-control w-75 my-2 "></textarea>
-                <div class="col-12 d-flex justify-content-lg-between mt-5  Grbimg-cat">
+                <div class="row d-flex justify-content-lg-between mt-5  flex-column Grbimg-cat">
                   
-                    
-                    <div class="productImgGroub d-flex ">
-                        <label for="productImage"class="fs-3 mt-1"> Image:</label> 
+                    <div class="col-md-3">
+
+                      <div class="productImgGroub  ">
+                        <label for="productImage"class="fs-3 "> Image:</label> 
                         <input type="file" accept = ".png , .jpg" id="productImage" placeholder="Upload" class=" form-control w-75">
+                      </div>
                     </div>
-                    <div class="d-flex align-items-center ">
+                    <div class="col-md-3">
+
+                      <div class="d-flex flex-column ">
                         <label for="productCategory "class="fs-3 me-2"> Category:</label>
-                     <select name="hhhh" id=""  class="btn btn-outline-dark w-50 mt-1 text-start" >
-                        <option value="">Electronics</option>
-                        
-                            <optgroup label="Fashion" class="text-primary">
-                                <option value="">Men</option> 
-                                 <option value="">Women</option>
-                                 <option value="">Kids</option>
-                             </optgroup>
-                   
-                        <option value="">Home and Kitchen
-                        </option>
-                        <option value="">Beauty and Personal care
-                        </option>
-                        <option value="">Sports and Outdoors
-                        </option>
-                        <option value="">Toys and Games
-                        </option>
-                        <option value="">Books and Media
-                        </option>
-                        <option value="">Automotive
-                        </option>
-                        <option value="">Pet Supplies
-                        </option>
-                        <option value="">Baby and kids</option>
-                     </select>
+                        <select name="hhhh" id=""  class="btn btn-outline-dark w-100 mt-1 text-start" >
+                          <option value="">Electronics</option>
+                          
+                          <optgroup label="Fashion" class="text-primary">
+                            <option value="">Men</option> 
+                            <option value="">Women</option>
+                            <option value="">Kids</option>
+                          </optgroup>
+                          
+                          <option value="">Home and Kitchen
+                          </option>
+                          <option value="">Beauty and Personal care
+                          </option>
+                          <option value="">Sports and Outdoors
+                          </option>
+                          <option value="">Toys and Games
+                          </option>
+                          <option value="">Books and Media
+                          </option>
+                          <option value="">Automotive
+                          </option>
+                          <option value="">Pet Supplies
+                          </option>
+                          <option value="">Baby and kids</option>
+                        </select>
+                      </div>
                     </div>
+                  
+                      <div class="col-md-3">
+          
+                        <span class="fs-3 me-2">color :</span>
+                        <select name="hhhh" id=""  class="btn btn-outline-dark w-100 mt-1 text-start" >
+                          <option value="">Red</option>
+                          
+                         
+                          
+                          <option value="">Blue
+                          </option>
+                          <option value="">yellow
+                          </option>
+                          <option value="">green
+                          </option>
+                          <option value="">black
+                          </option>
+                          <option value="">white
+                          </option>
+                        
+                      
+                        </select>
+                        
+                      </div>
+                      <div class="col-md-3">
+                        <span class="fs-3 me-2">Size</span>
+                        <select name="hhhh" id=""  class="btn btn-outline-dark w-100 mt-1 text-start" >
+                          <option value="">Red</option>
+                          
+                         
+                          
+                          <option value="">Blue
+                          </option>
+                          <option value="">yellow
+                          </option>
+                          <option value="">green
+                          </option>
+                          <option value="">black
+                          </option>
+                          <option value="">white
+                          </option>
+                        
+                      
+                        </select>
+                 
+                      </div>
                 </div>
+
                 <div class="mt-5 d-flex justify-content-center ">
                     <button class="btn-secondary btn py-3 px-5  mt-5">
                         Add Product
                     </button>
                 </div>
                 </form>
-            </div>
+            </div>  -->
 </div>
 <footer class="updateFooter py-4 text-white">
   <div class="container  py-5 px-5">
