@@ -7,6 +7,12 @@
     /* transition: 0.3s; */
     /* font-size: 14px; */
     list-style: none;
+
+}
+.sec2 ,.advertisement, #Works{
+   
+        overflow: hidden;
+    
 }
 .ofhiden{
     background-color: #F0F2F5;
@@ -1004,11 +1010,15 @@ border: none;
         width: 250px;
         margin: auto;
         position: absolute;
-        padding: 10px;
+        padding: 15px;
         right: 18%;
-        background-color: #ffffff;
-        transform: translateY(34px);
+        background:linear-gradient(to right,rgb(255, 255, 255),rgb(184, 184, 184) );
+    filter: drop-shadow(-3px -3px 2px rgba(5, 60, 92, 0.6))
+                        
         
+    ;
+        transform: translateY(34px);
+    
         z-index: 99899999;
         /* transform: translateX(-90px); */
     }
