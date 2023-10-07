@@ -79,28 +79,10 @@ nav .form-control {
 .DTCairo{
  display: none;
 }
-
-
-/* .fa-search::before {
-  content: "\f002";
-  color: black;
-  z-index: 5545645455454;
-  font-size: 20px;
-
-  position: absolute;
-  color: rgb(255, 255, 255);
-  left: 12px !important;
-  top: 15px !important;
-} */
-/* .navbar2 .nav-link{
-display: none; */
 }
-/* .navbar2 .search-groub{
-width: 100% !important;
-} */
+
 .navbar2 .DTCairocolor{
 margin-left: 20px !important;
-/* margin-right: auto !important; */
 }
 
 
@@ -150,9 +132,9 @@ margin-left: 20px !important;
       }
       
   }
-/* 
+
   @media (min-width: 1400px) {
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container,.container-flud {
       max-width: 1140px;
     }
-  } */
+  }
