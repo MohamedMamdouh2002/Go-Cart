@@ -13,12 +13,12 @@
     // console.log(sectionOffset);
     $(window).scroll(function(){
       let windowScroll=$(window).scrollTop();
-      if(windowScroll>sectionOffset-100){
+      if(windowScroll>sectionOffset-300){
         // $('.navbar1').css("backgroundColor","#fff")
         $('.navbar2').css("backgroundColor","rgb(35, 99, 112)")
         // $('.search-groub').css("display","none")
         $('.search-groub1').css("display","block")
-        $(' .navbar2 .nav-link').css("color","#fff")
+        // $(' .navbar2 .nav-link').css("color","#fff")
         $(' .navbar2 .DTCairocolor').css("color","#fff")
         // $(' .navbar2 .container').css("width","60%")
         
@@ -30,7 +30,7 @@
         $('.navbar2').css("backgroundColor","rgba(255,255,255,0.5)")
         // $('.navbar2 .container').css("width","90%")
       $('.search-groub').css("display","block")
-      $(' .navbar2 .nav-link').css("color","#000")
+       $(' .navbar2 .nav-link').css(".navbar2 li:hover:after","#0fff")
       $(' .navbar2 .DTCairocolor').css("color","#000")
 
       $('#btnUp').fadeOut(500)
@@ -40,7 +40,7 @@
      
   $(window).scroll(function(){
     let windowScroll=$(window).scrollTop();
-    if(windowScroll>sectionOffset-100){
+    if(windowScroll>sectionOffset-300){
       if ($(window).width() > 600) {
         $('.navbar2 .container').css("width","60%")
       }

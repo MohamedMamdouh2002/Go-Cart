@@ -7,7 +7,7 @@
 }
 :root{
     scroll-behavior: smooth;
-    --main-color: rgb(35, 99, 112);
+    --main-color: rgb(52, 88, 95);
     --dark-color: #000;
     --light-color: #fff;
     --body-color: #F0F2F5;
@@ -97,9 +97,9 @@ nav .form-control:focus{
 .navbar, .navbar2 .container,.category p,.category .dropdown{
     transition: all 1s  ;
 }
-.navbar2 .nav-item .nav-links{
-font-size: 60px;
-font-weight: bolder;
+.navbar2 .nav-item .nav-link{
+font-size: 16px;
+font-weight: 600;
 }
 .navbar1{
     background-color:var(--light-color);
@@ -107,10 +107,32 @@ font-weight: bolder;
 }
 .navbar2{
     background-color:rgba(255, 255, 255,0.4);
+    box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.2);
+    position: sticky;
 }
 .navbar4{
     background-color:var(--main-color);
 color: var(--light-color);}
+
+.navbar2 li{
+    color: var(--light-color );
+}
+.navbar2 li:hover,
+.navbar2 li.active{
+    color: #fff;
+    
+    position: relative;
+}
+.navbar2 li.active::after,
+.navbar2 li:hover:after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    top: 8px;
+    background-color: #ffffff;
+}
+
 /*end nav */
     /* start sign */
 .ForgotPass a{
@@ -453,7 +475,7 @@ header{
     height: 40px;
     border-radius: 50%;
 }
-.sec2 ,.advertisement, #Works{
+.sec2 ,.advertisement, #Works ,.features{
    
         overflow: hidden;
 }
@@ -566,9 +588,55 @@ animation-iteration-count: infinite;
  }
 .win {
     font-size: 30px;
-    margin-left: 107px;
-    margin-right: 80px;
 
+    /* margin-left: 107px;
+    margin-right: 80px; */
+
+}
+.features .imgFeatures{
+    width: 180px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--body-color);
+    padding: 25px 15px;
+    border-radius: 10px;
+}
+.features .imgFeatures:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0,0.3);
+
+}
+.feature1{
+    background-color: #FEDCE7;
+    padding: 5px;
+ border-radius:5px}
+.feature2{
+    background-color:#CCEBBC;
+    padding: 5px;
+ border-radius:5px
+}
+.feature3{
+    background-color:#D1E8F4;
+    padding: 5px;
+ border-radius:5px
+}
+.feature4{
+    background-color:#CFD4F7;
+    padding: 5px;
+ border-radius:5px
+}
+.feature5{
+    background-color:#E1C7E1;
+    padding: 5px;
+ border-radius:5px
+}
+.feature6{
+    background-color: #C4BCB3;
+    padding: 5px;
+ border-radius:5px
+}
+.win:first-child{
+letter-spacing: 4px;
 }
 .category{
 background-color: var(--light-color);
@@ -739,13 +807,15 @@ border: none;
     
     }
     .cartList{
-        width: 250px;
+        width: 300px;
         margin: auto;
         position: absolute;
         padding: 15px;
         right: 18%;
-        background:linear-gradient(to right,rgb(255, 255, 255),rgb(184, 184, 184) );
-        filter: drop-shadow(-3px -3px 2px rgba(5, 60, 92, 0.6)) ;
+        border:1px solid #000;
+        /* background-color: var(--light-color); */
+        background:linear-gradient(to right,rgb(163, 244, 255),rgb(255, 255, 255) );
+        /* filter: drop-shadow(-3px -3px 2px rgba(5, 60, 92, 0.6)) ; */
         transform: translateY(34px);
         z-index: 99899999;
     }
@@ -831,8 +901,9 @@ padding-left:  20px;
 }
 .slider
 {
-    background-color: #fff;
+    background:linear-gradient(to top, #F0F2F5,#7cb5ce) ;
     width: 90%;
+    border-radius: 20px;
     padding: 10px;
     margin: auto;
 

@@ -69,8 +69,8 @@
               <div class=" ">
 
                 <div class="cartList rounded-3    " id="cartList">
-                  <div class=" row d-flex ">
-                      <div class=" col-md-12 justify-content-start align-items-center gap-2 d-flex ">
+                  <div class=" row  d-flex ">
+                      <div class="  col-md-12 justify-content-start align-items-center gap-2 d-flex ">
 
                       <img src="Assets/Image/product/product-19.png" class="" alt="">
                       
@@ -104,9 +104,11 @@
                         </button>
                       </div>
                     </div>
-                  <div class="d-flex justify-content-center mb-2 mt-3">
-                    <a href="Html/Cart1.html" class="px-3 py-2 text-decoration-none text-white" style="background-color: #41819c;">View Cart</a>
-                  </div>
+                    <hr class="bg-black">
+
+                  <div class="d-flex justify-content-center mb-2 mt-3 ">
+                    <a href="Html/Cart1.html" class="px-3 rounded-2 py-2 text-decoration-none text-white" style="background-color: #41819c;">View Cart</a>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -155,7 +157,7 @@
     <div class="container ">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto gap-4 mb-0 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link " aria-current="page" href="#Home">Home</a>
           </li>
          
@@ -195,9 +197,8 @@
 
 
         <!-- end nav  -->
-
         <!-- start landing -->
-       <header id="Home" class=" ">
+        <header id="Home" class=" ">
          <div class=" px-5 head  headerLayover">
 
               <div class="headCaption w-100  " data-aos="fade-up">
@@ -210,25 +211,31 @@
                   <div class="d-flex gap-2">
                     <button class="btn2 fw-bold">
                       <a href="Html/Categories.html" class="text-decoration-none text-white">
-
+                        
                         Explore Now
                       </a>
                     </button>
                   </div>
+                </div>
+                <div class="headImg  mt-5 w-100" data-aos="fade-down">
+                  <img src="Assets/Image/logoo5.png"class="w-100 img" alt="">
+                </div>
               </div>
-            <div class="mt-5 w-100" data-aos="fade-down">
-              <img src="Assets/Image/logoo5.png"class="w-100 img" alt="">
-            </div>
-          </div>
-          <button class="btn rounded-3" id="btnUp">
-            <i class="fas fa-arrow-up btnUp"></i>
+              <button class="btn rounded-3" id="btnUp">
+                <i class="fas fa-arrow-up btnUp"></i>
           </button>
       </header>
         <!-- end landing -->
      
-    
 
 
+
+        <div class="bg-success p-4 w-25   bg-opacity-25" >
+          <small class="fs-6 text-dark"> ✅ The product was added successfully</small>
+        </div>
+        <div class="bg-danger p-4 w-25 bg-opacity-25">
+          <small class="fs-6 text-dark"> ❌ The product is already in the card</small>
+        </div>
         <!-- start section 1 -->
         <section class="sec2 mt-5" id="sec2">
           <div class="container">
@@ -319,8 +326,62 @@
     
         <!-- start section 2 -->
        
-
-
+<!-- new -->
+<section class="features my-5" >
+  <div class="container">
+    <div class="row" >
+      <div class="col-md-2  p-3">
+        <div class="imgFeatures"data-aos="fade-right" >
+          <div class="">
+            <img src="Assets/Image/features/f1.png" alt="">
+            <h5 class="mt-2 feature1">Free Shipping</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2  p-3">
+        <div class="imgFeatures" data-aos="fade-right">
+          <div class="">
+            <img src="Assets/Image/features/f2.png" alt="">
+            <h5 class="mt-2 feature2 ">Online Order</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2  p-3">
+        <div class="imgFeatures" data-aos="fade-right">
+          <div class="">
+            <img src="Assets/Image/features/f3.png" alt="">
+            <h5 class="mt-2 feature3">Save Money</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2  p-3">
+        <div class="imgFeatures" data-aos="fade-left">
+          <div class="">
+            <img src="Assets/Image/features/f4.png" alt="">
+            <h5 class="mt-2 feature4">Promotions</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2  p-3">
+        <div class="imgFeatures " data-aos="fade-left">
+          <div class="">
+            <img src="Assets/Image/features/f5.png" alt="">
+            <h5 class="mt-2 feature5">Happy Sell</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2  p-3">
+        <div class="imgFeatures" data-aos="fade-left">
+          <div class="">
+            <img src="Assets/Image/features/f6.png" alt="">
+            <h5 class="mt-2  feature6">F24/7 Support</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- new -->
 
     <section class="sale-sec container swiper mySwiper">
 
@@ -341,7 +402,7 @@
                   <div class="product-btn">
                       <ul class="product-action">
                         <li  class="addToWL"><i class="far fa-heart"></i></li>
-                        <li><a href="Html/Cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="cart1"><a ><i class="fa-solid fa-cart-shopping"></i></a></li>
                           
                       </ul>
                   </div>
@@ -362,8 +423,8 @@
                           <i class="fa-solid fa-star-half-stroke"></i>
                       </div>
                       <div class="price">
-                          <span>$120.00</span>
-                          <del>$125.00</del>
+                          <span class="fs-6">$2000.00</span>
+                          <del>$2000.00</del>
                       </div>
           
                   </div>
@@ -894,13 +955,13 @@
     <!-- end section 3-->
 
 
-<div class="win  section-head">
-  <h4 class="" >Categories </h4>
-</div>
-
+    
     <section class="slider my-5">
-
-          <div class="container">
+      
+      <div class="container">
+            <div class="win  section-head">
+              <h2 class="win1" >Categories </h2>
+            </div>
             <div class="slickSlider slickSlider1" >  
               
               <div class="item rounded-circle ">

@@ -5,6 +5,9 @@ body.dark-mode {
 .dark-mode  .card{
     background-color: #d3d3d334;
 }
+.dark-mode .features .imgFeatures{
+    background-color: #41819c;
+}
 .dark-mode h1 {
 color: #ffffff;
 }
