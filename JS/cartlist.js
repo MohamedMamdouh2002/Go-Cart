@@ -1,7 +1,7 @@
-$("#cartList").slideUp(0);
+$("#cartList").fadeOut(0);
         
 $("#Carticon").click(function(){
-  $("#cartList").slideToggle(5);
+  $("#cartList").fadeToggle(0);
 })
 
 
