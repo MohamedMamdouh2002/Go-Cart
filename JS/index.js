@@ -141,7 +141,7 @@ function isEmailValid(){
   
   
   });
-  email.addEventListener('keyup',function(){
+  email.addEventListener('onblur',function(){
     if(isEmailValid()) {
       document.querySelector(".alertEmail1").classList.add("d-none")
   }else{

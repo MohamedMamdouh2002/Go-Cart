@@ -60,16 +60,56 @@
       
       
     }
+    
+    // console.log(secOffset);
   })
+  // s = () => {
+  //   let ss = document.querySelector(".sss"); // استخدم # لاستهداف عنصر بواسطة الـ ID
+  //   ss.classList.replace("d-none", "d-block"); // قم بتبديل الفئة "d-none" بالفئة "d-block" لعرض العنصر
+  //   setTimeout(() => {
+  //     ss.classList.replace("d-block", "d-none"); // استرجع الفئة "d-none" بعد انتهاء المدة لإخفاء العنصر
+  //   }, 2000);
+  // }
+  
+  
+  // setInterval(s, 3000); // كل 5 دقائق (300000 مللي ثانية)
+  
+
+
+  alert2 = () => {
+  let alert = document.querySelector(".alert2"); 
+  alert.classList.replace("d-none", "d-block");
+  
+
+  
+    setTimeout(() => {
+      alert.classList.replace("d-block", "d-none"); 
+    }, 3000);
+  }
+  setInterval(alert2, 300000);
+  
+  
+  
   $('#btnUp').click(function(){
     $('html,body').animate({scrollTop:0},200)
   })
+  // let secOffset=$(".slider").offset().top
+  // $('.ex').click(function(){
+  //   $('html,body').scroll(secOffset,400)
+  // })
+  document.querySelector('.ex').addEventListener('click', function() {
+    var targetSection = document.querySelector('.slider');
+    window.scrollTo({
+        top: targetSection.offsetTop-180,
+        behavior: 'smooth'
+    });
+});
   
-  // $('.multiple-items').slick({
-  //   infinite: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 3
-  // });
+  $('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
 
 
   $(document).ready(function(){
@@ -152,43 +192,43 @@
 
 
 
-        var swiper = new Swiper(".slide-swp", {
-          pagination: {
-            el: ".swiper-pagination",
-            dynamicBullets: true,
-            clickable:true
-          },
-          autoplay:{
-              delay:2500,
-          },
-          loop:true,
-        });
+        // var swiper = new Swiper(".slide-swp", {
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     dynamicBullets: true,
+        //     clickable:true
+        //   },
+        //   autoplay:{
+        //       delay:2500,
+        //   },
+        //   loop:true,
+        // });
       
-        var swiper = new Swiper(".deals", {
-          slidesPerView: 2,
-          spaceBetween: 30,
-            autoplay: {
-              delay: 300000,
-              disableOnInteraction: false,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            loop:true,
-            breakpoints:{
-              1200:{
-                slidesPerView : 2,
-              },
-              990 : {
-                slidesPerView : 1,
-              },
-              0 :{
-                slidesPerView : 1,
-              }
+        // var swiper = new Swiper(".deals", {
+        //   slidesPerView: 2,
+        //   spaceBetween: 30,
+        //     autoplay: {
+        //       delay: 300000,
+        //       disableOnInteraction: false,
+        //     },
+        //     navigation: {
+        //       nextEl: ".swiper-button-next",
+        //       prevEl: ".swiper-button-prev",
+        //     },
+        //     loop:true,
+        //     breakpoints:{
+        //       1200:{
+        //         slidesPerView : 2,
+        //       },
+        //       990 : {
+        //         slidesPerView : 1,
+        //       },
+        //       0 :{
+        //         slidesPerView : 1,
+        //       }
               
-            }
-        });
+        //     }
+        // });
       
       
       
@@ -231,40 +271,40 @@
       
       
         
-        var swiper = new Swiper(".swip-with-img", {
-          slidesPerView: 4,
-          spaceBetween: 30,
-            autoplay: {
-              delay: 3000,
-              disableOnInteraction: false,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            loop:true,
-            breakpoints:{
-              1400:{
-                slidesPerView: 4,
-              },
-              1100:{
-                slidesPerView : 3,
-              },
-              800:{
-                slidesPerView : 2,
-                spaceBetween: 30,
-              },
-              700 :{
-                slidesPerView : 2,
-                spaceBetween: 15,
-              },
-              0 :{
-                slidesPerView : 2,
-                spaceBetween: 10,
-              }
+        // var swiper = new Swiper(".swip-with-img", {
+        //   slidesPerView: 4,
+        //   spaceBetween: 30,
+        //     autoplay: {
+        //       delay: 3000,
+        //       disableOnInteraction: false,
+        //     },
+        //     navigation: {
+        //       nextEl: ".swiper-button-next",
+        //       prevEl: ".swiper-button-prev",
+        //     },
+        //     loop:true,
+        //     breakpoints:{
+        //       1400:{
+        //         slidesPerView: 4,
+        //       },
+        //       1100:{
+        //         slidesPerView : 3,
+        //       },
+        //       800:{
+        //         slidesPerView : 2,
+        //         spaceBetween: 30,
+        //       },
+        //       700 :{
+        //         slidesPerView : 2,
+        //         spaceBetween: 15,
+        //       },
+        //       0 :{
+        //         slidesPerView : 2,
+        //         spaceBetween: 10,
+        //       }
               
-            }
-        });
+        //     }
+        // });
         
 
         AOS.init();
@@ -285,4 +325,7 @@
         }
         })
       
+        let circleText =document.querySelector('.circle-text');
+        circleText.innerHTML=circleText.textContent.split("").map((char,index)=> `<span style= "transform:rotate(${index *28.5}deg)">${char}</span>`).join("")
+        
     });

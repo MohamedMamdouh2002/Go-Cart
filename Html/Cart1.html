@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="shortcut icon" href="../Image/55.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Assets/Image/55.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/all.css">
     <link rel="stylesheet" href="../CSS/dark-mode.css" id="dark-mode">
     <link rel="stylesheet" href="../CSS/media.css">
@@ -19,7 +19,7 @@
     <nav class="navbar navbar1 navbar-expand-lg ">
       <div class="container ">
         <div class="">
-        <img src="Image/home.png" class="iconbg" alt="">
+        <img src="../Assets/Image/logoo5.png" class="iconbg" alt="">
         <a class="navbar-brand nav-name  " href="#"> <span class="Go-color">Go</span> CART</a>
       </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
                 
                 <li class="nav-item dropdown  ms-2">
                   <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="../Image/home.png" class="acc border" alt="" >
+                    <img src="../Assets/Image/user(female).png" class="acc border" alt="" >
                     
                   </a>
                   <ul class="dropdown-menu licolor">
@@ -94,7 +94,7 @@
        
         <div class=" d-flex gap-4 DTCairocolor">
           <div class="d-flex gap-2 ">
-              <img src="../Image/egypt.jpeg" class="egyimg mt-2" alt=""> 
+              <img src="../Assets/Image/egypt.jpeg" class="egyimg mt-2" alt=""> 
               <p class=" DTCairo   pt-3">Delivery to Egypt</p>
           </div>
           
@@ -117,12 +117,14 @@
     <section class="cart container">
        
 
-        <div class="row">
-          <div class="col-md-9 bg-primary bg-opacity-10 cartleft  p-5">
+        <div class="row cart12">
+          <div class="col-xl-9 bg-primary bg-opacity-10 cartleft  p-5">
            <div class="">
 
              <h1>My Shopping Cart</h1>
-             <div class=" d-flex mt-5 align-items-center justify-content-between ">
+             <div class=" d-flex cartShop mt-5 align-items-center gap-4 ">
+              <div class="d-flex gap-2">
+
           <div class="d-flex align-items-center">
 
             <img src="../Assets/Image/product/product-32.jpeg"class="cartimg" alt="">
@@ -131,7 +133,7 @@
               <p class="ms-3">klsadkljaslkjsalkjkjlsljk</p>
             </div>
           </div>  
-          <div class=" d-flex gap-4">
+          <div class=" d-flex flex-column-reverse gap-4">
             <div class="">
 
               <small class="fw-bold">Color</small>
@@ -153,16 +155,20 @@
                 <option value="2">XLarge</option>
               </select>
             </div>
-          </div>  
+              </div>
+            </div>  
+            <div class=" d-flex gap-3">
+
               <div class="Product-amount col-md-5 border d-flex p-0 align-items-center ms-0">
                 <div class="minus  p-0 text-center py-2 border-end fs-5 fw-bold">-</div>
                 <div class="amount p-0 text-center py-2 fs-6">1</div>
                 <div class="positive  p-0 text-center py-2 border-start fs-5 fw-bold">+</div>
-             </div>
-             <span class="h2 cartprice">250$</span>
-             <button class="btn">X Delete</button>
+              </div>
+              <span class="h2 cartprice">250$</span>
+              <button class="btn">X </button>
             </div>
-             <div class=" d-flex mt-5 align-items-center justify-content-between ">
+            </div>
+             <!-- <div class=" d-flex mt-5 align-items-center justify-content-between ">
           <div class="d-flex align-items-center">
 
             <img src="../Assets/Image/product/product-10.jpg"class="cartimg" alt="">
@@ -321,11 +327,11 @@
              </div>
              <span class="h2 cartprice">2500,00$</span>
              <button class="btn ">X Delete</button>
-            </div>
+            </div> -->
             
           </div>
         </div>
-          <div class="col-md-3 bg-success bg-opacity-10 cartright  p-5">
+          <div class="col-xl-3 bg-success bg-opacity-10 cartright  p-5">
             <h1 >Order Details</h1>
             <div class="my-5">
 
@@ -358,19 +364,7 @@
 
    
 
-        <div class="toast ms-2 d-block" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header  bg-black">
-            <img src="../55.ico" class="rounded me-2 w-25" alt="...">
-            <strong class="me-auto">My cart</strong>
-            <small class="text-muted text-white">11 mins ago</small>
-            <button type="button" class="btn-close btn-close-white border border-white" data-bs-dismiss="toast" aria-label="Close"></button>
-            <!-- <button type="button" class="btn-danger btn-close" aria-label="Close"></button> -->
-
-          </div>
-          <div class="toast-body">
-            Hello,There are no selected products to display!
-          </div>
-        </div>
+      
       <footer class="updateFooter py-4 mt-5">
         <div class="container  py-5 px-5 ">
             <div class="row g-3 text-white" >
