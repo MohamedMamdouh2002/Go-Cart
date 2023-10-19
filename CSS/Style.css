@@ -34,8 +34,17 @@
 .bodyBg{
     background-color: var(--body-color);
 }
+.card-title{
+    
+}
 /* body */
 /*start nav */
+.navbar .navbar-toggler[aria-expanded="true"]{
+    background-color: var(--main-color);
+}
+.navbar .navbar-toggler[aria-expanded="true"] span i{
+    color: white;
+}
 .DTCairo{
     font-size: 12px;
 }
@@ -60,10 +69,10 @@ nav .form-control:focus{
 .shop::before {
     content: "\f07a";
     color: var(--dark-color);
-    font-size: 20px;
-    z-index: 5545645455454;
+    font-size: 25px;
+    z-index: 5;
     position: absolute;
-    left: -19px;
+    /* left: -15px; */
     top: 14px;
 }
 .fa-moon::before {
@@ -813,17 +822,23 @@ border: none;
         text-decoration: none;
     
     }
+    .cartconst{
+        /* height: 100%; */
+        letter-spacing: 5px;
+        border-left:5px solid var(--main-color) ;
+    }
     .cartList{
         width: 300px;
         margin: auto;
         position: absolute;
-        padding: 15px;
+        padding: 19px;
         right: 18%;
-        border:1px solid #000;
-        /* background-color: var(--light-color); */
-        background:linear-gradient(to right,rgb(163, 244, 255),rgb(255, 255, 255) );
-        /* filter: drop-shadow(-3px -3px 2px rgba(5, 60, 92, 0.6)) ; */
-        transform: translateY(34px);
+        border-top: 6px;
+        border: 5px solid var(--second-color);
+        border-bottom-left-radius:20px;
+        border-bottom-right-radius:20px;
+        background-color: #e4e4e4;
+        transform: translateY(36px);
         z-index: 99899999;
     }
     .cartList img{
@@ -942,14 +957,19 @@ justify-content: center;
 .item:hover .layer1{
 opacity: 1;
 }
+.countercart{
+    width: 20px;
+    position: absolute;
+    z-index: 9546458;
+    background-color:#488098;
+    color: white;
+}
 .alert2{
-    /* background-color: #1c506e; */
-    /* background:linear-gradient(to bottom,rgb(195, 180, 180),rgb(148, 148, 148)); */
  top: 200px;
  box-shadow: 28px 20px 50px rgba(0, 0, 0, 0.2);
  right: 0;
     z-index: 55555;
-    width: 320px;
+    width: 370px;
     font-family: 'Reem Kufi Fun', sans-serif;
 }
 /* swiper */
@@ -1014,6 +1034,7 @@ opacity: 1;
 /* start wish */
 .wishlist{
     margin: 156px 0;
+
 }
 .wishimg1{
     width: 200px;
@@ -1139,6 +1160,7 @@ transition: transform .5s linear;
 .go-down-btn .circle-text{
     position: absolute;
     width: 100%;
+
     height: 100%;
    animation: rotateText  10000ms infinite linear;
     /* background-color: rgba(0, 3, 143, 0.19); */

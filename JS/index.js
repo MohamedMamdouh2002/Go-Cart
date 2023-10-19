@@ -124,7 +124,7 @@ function isEmailValid(){
   
   }
  
-  fName.addEventListener('keyup',function(){
+  fName.addEventListener('change',function(){
     if(isNameValid()) {
       document.querySelector(".alertName1").classList.add("d-none")
   }else{
@@ -132,7 +132,7 @@ function isEmailValid(){
   }
 });
   
-  lNAme.addEventListener('keyup',function(){
+  lNAme.addEventListener('change',function(){
     if(isLNameValid()) {
       document.querySelector(".alertName2").classList.add("d-none")
   }else{
@@ -141,7 +141,7 @@ function isEmailValid(){
   
   
   });
-  email.addEventListener('onblur',function(){
+  email.addEventListener('change',function(){
     if(isEmailValid()) {
       document.querySelector(".alertEmail1").classList.add("d-none")
   }else{
@@ -150,7 +150,7 @@ function isEmailValid(){
   
   
   });
-  phone.addEventListener('keyup',function(){
+  phone.addEventListener('change',function(){
     if(isPhoneValid()) {
       document.querySelector(".alertPhone1").classList.add("d-none")
   }else{
@@ -159,7 +159,7 @@ function isEmailValid(){
   
   
   });
-  passWord.addEventListener('keyup',function(){
+  passWord.addEventListener('change',function(){
     if(isPassValid()) {
       document.querySelector(".alertPass1").classList.add("d-none")
   }else{
@@ -168,7 +168,7 @@ function isEmailValid(){
   
   
   });
-  rePassword.addEventListener('keyup',function(){
+  rePassword.addEventListener('change',function(){
     if(isRePassValid()) {
       if (rePassword.value === passWord.value){
   
@@ -186,7 +186,7 @@ function isEmailValid(){
 
 
   
-  fName.addEventListener('keyup',function(){
+  fName.addEventListener('change',function(){
     if(isNameValid()&&isLNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isAgeValid()&&isPassValid()) {
       btnSignUp.removeAttribute("disabled")
     }else{
@@ -194,33 +194,33 @@ function isEmailValid(){
     }
   })
   
-  lNAme.addEventListener('keyup',function(){
+  lNAme.addEventListener('change',function(){
     if(isNameValid()&&isLNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isPassValid()) {
       btnSignUp.removeAttribute("disabled")
     }else{
       btnSignUp.disabled="true"
     }
   })
-    email.addEventListener('keyup',function(){
+    email.addEventListener('change',function(){
       if(isNameValid()&&isLNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isPassValid()) {
         btnSignUp.removeAttribute("disabled")
       }else{
         btnSignUp.disabled="true"
       }})
-    passWord.addEventListener('keyup',function(){
+    passWord.addEventListener('change',function(){
       if(isNameValid()&&isLNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isPassValid()) {
         btnSignUp.removeAttribute("disabled")
       }else{
         btnSignUp.disabled="true"
       }})
-   rePassword.addEventListener('keyup',function(){
+   rePassword.addEventListener('change',function(){
     if(isNameValid()&&isLNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isPassValid()) {
       if (rePassword.value === passWord.value){
       btnSignUp.removeAttribute("disabled")
     }}else{
       btnSignUp.disabled="true"
     }})
-   phone.addEventListener('keyup',function(){
+   phone.addEventListener('change',function(){
     if(isNameValid()&&isLNameValid()&&isEmailValid()&&isRePassValid()&&isPhoneValid()&&isPassValid()) {
       btnSignUp.removeAttribute("disabled")
     }else{
@@ -228,23 +228,23 @@ function isEmailValid(){
     }})
  
     
-// fName.addEventListener('keyup',function(){
+// fName.addEventListener('change',function(){
 //     validate(fName, nameRegex) 
 // })
-// lNAme.addEventListener('keyup',function(){
+// lNAme.addEventListener('change',function(){
 //     validate(lNAme, nameRegex) 
 // })
-// email.addEventListener('keyup',function(){
+// email.addEventListener('change',function(){
 //     validate(email, emailRegex) 
 // })
-// passWord.addEventListener('keyup',function(){
+// passWord.addEventListener('change',function(){
 //     validate(passWord, passwordRegex) 
 // })
 
-// rePassword.addEventListener('keyup',function(){
+// rePassword.addEventListener('change',function(){
 //     validate(rePassword, rePasswordRegex) 
 // })
-// phone.addEventListener('keyup',function(){
+// phone.addEventListener('change',function(){
 //     validate(phone, phoneRegex) 
 // })
 

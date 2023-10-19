@@ -47,6 +47,9 @@
     
   
   }
+  .alert2{
+    width: 270px !important;
+  }
    .oh{
     display: flex;
     flex-direction: column;
@@ -106,11 +109,11 @@ margin-left: 20px !important;
 .shop::before{
   
   content: "\f07a";
-  font-size: 20px;
-  z-index: 5545645455454;
+  font-size: 25px;
+  z-index:4;
   position: absolute;
   color: rgb(255, 255, 255);
-  left: -8px !important;
+  left: -15px !important;
   top: 14px !important;
 }
 .fa-moon::before {
@@ -135,6 +138,14 @@ margin-left: 20px !important;
     /* flex-direction: column; */
     
   
+  }
+  .cartList{
+    width: 600px;
+    position: absolute;
+    padding: 10px;
+    background-color: #03A9F4;
+    transform: translateY(24px) !important;
+   /* left: -350px; */
   }
   .cartShop{
     display: flex;

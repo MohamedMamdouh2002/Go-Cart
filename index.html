@@ -41,9 +41,9 @@
    </a>
 
      
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="navbar-toggler border-1 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fa-solid fa-bars Go-color  fs-1"></i></span>
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="list-unstyled   mb-2 search-groub1">
                 <li class=" position-relative  ">
@@ -59,17 +59,21 @@
               <ul class="d-flex  gap-3 list-unstyled  licolor  my-auto  ms-auto icon-groub ">
            <div class="">
 
-             <li class="nav-item ms-2   d-flex flex-column position-relative">
-               <a class="nav-link licolor"  id="Carticon">
-                 <i class="fa-solid fa-cart-shopping shop"></i>
-            
+             <li class="nav-item ms-1   d-flex flex-column position-relative">
+               <a class="nav-link licolor position-relative "  id="Carticon">
+
+                 <i class="fa-solid fa-cart-shopping shop fs-2"></i>
+                 <small class="countercart  mt-1 text-center rounded-1">0</small>
+               
                 </a>
                 
               </li>
               <div class=" ">
 
-                <div class="cartList rounded-3    " id="cartList">
-                  <div class=" row  d-flex ">
+                <div class="cartList   " id="cartList">
+                  <div class=" row p-2 d-flex ">
+                    <h2 class="cartconst   border-5">My Cart                      
+                    </h2>
                       <div class="  col-md-12 justify-content-start align-items-center gap-2 d-flex ">
 
                       <img src="Assets/Image/product/product-19.png" class="" alt="">
@@ -80,14 +84,14 @@
                       <div class="d-flex col-md-12  justify-content-between align-items-center">
 
                         <small class="fw-normal text-success ">120,00$</small>
-                        <button class="btn border border-2">
+                        <button class="btn border border-dark border-1">
 
                           <i  class="fa fa-trash Go-color"></i>
                         </button>
                       </div>
                     </div>
                     <hr class="bg-black">
-                <div class=" row d-flex ">
+                <!-- <div class=" row d-flex ">
                       <div class=" col-md-12 justify-content-between align-items-center gap-3 d-flex ">
 
                       <img src="Assets/Image/product/product-15.jpg" class="" alt="">
@@ -104,9 +108,9 @@
                         </button>
                       </div>
                     </div>
-                    <hr class="bg-black">
+                    <hr class="bg-black"> -->
 
-                  <div class="d-flex justify-content-center mb-2 mt-3 ">
+                  <div class="d-flex justify-content-center mb-2 mt-3">
                     <a href="Html/Cart1.html" class="px-3 rounded-2 py-2 text-decoration-none text-white" style="background-color: #41819c;">View Cart</a>
                   </div> 
                 </div>
@@ -115,15 +119,15 @@
               <li>    
                 <a href="Html/wishlist.html" class="text-black text-decoration-none ">
 
-                  <i class="fa-solid fa-heart fs-3 ms-2 mt-2"></i>
+                  <i class="fa-solid fa-heart fs-3 ms-2 mt-3"></i>
                 </a>          
               </li>
                 
-              <li class="nav-item mt-1 me-4">
+              <li class="nav-item mt-2 me-4">
                   <i class="fa-solid fa-moon fs-3  d-block licolor " id="moon" ></i>
                   <i class="fa-solid fa-sun fs-3  d-none  licolor" id="sun" ></i>
                 </li>
-                <li class="nav-item dropdown  ms-0">
+                <li class="nav-item dropdown  ms-0 mt-1">
                   <a class="nav-link dropdown-toggle licolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="Assets/Image/user(female).png" class="acc border" alt="" >
                     
@@ -134,7 +138,7 @@
                     
                   </ul>
                 </li>
-                <li class="nav-item ms-4 pt-2">
+                <li class="nav-item ms-4 pt-3">
                   <a class=" text-decoration-none text-black" href="Html/SignIn.html" >
 
                        Log in <i class="fa-solid fa-user"></i>
@@ -205,13 +209,13 @@
 
 <!-- ALERT -->
 
-<div class="position-fixed alert alert-success  alert2">
+<!-- <div class="position-fixed alert alert-success  alert2">
       <div class=" text-black p-3 border-black  position-relative " >
         <audio src="Assets/DAHMER-Trailer 1.mp4"></audio>
-        <!-- <small class=" fw-bolder position-absolute top-0 end-0 px-2 py-1">alert</small> -->
-        <h1 class="text-center me-3">❤️لا اله الا الله❤️</h1>
+        <<small class=" fw-bolder position-absolute top-0 end-0 px-2 py-1">alert</small> 
       </div>
-    </div>
+    </div> -->
+    <h1 class="text-center  position-fixed alert text-dark alert-success  alert2">❤️لا اله الا الله❤️</h1>
     <!-- ALERT -->
     <!-- start landing -->
    
@@ -226,9 +230,9 @@
                         .... Try it now
                         </p>     
                   
-                      <a class="text-decoration-none go-down-btn  text-black ex">
+                      <a class="text-decoration-none go-down-btn  text-black  ex">
                     
-                          <p class="circle-text">EXPLORE NOW</p>
+                          <p class="circle-text ">EXPLORE NOW</p>
                         </a>
                     
            
@@ -242,7 +246,8 @@
           </button>
       </header>
         <!-- end landing -->
-      
+        <button class="px-2 py-2 bg-danger  btnp">+</button>
+                 <button class="px-2 py-2 bg-danger m-5 btnm">-</button>
          <!-- <div class="bg-success p-4 w-25   bg-opacity-25" >
           <small class="fs-6 text-dark"> ✅ The product was added successfully</small>
         </div> 
@@ -1277,8 +1282,10 @@
   
 </script>
     
-    <script src="JS/bootstrap.bundle.min.js"></script>
-      <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="JS/popper.min.js"></script>
+
+<script src="JS/bootstrap.bundle.min.js"></script>
       <script src="JS/slick.js"></script>
       <script src="JS/mixitup.min.js"></script>
     

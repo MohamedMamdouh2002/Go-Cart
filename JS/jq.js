@@ -61,42 +61,60 @@
       
     }
     
-    // console.log(secOffset);
   })
-  // s = () => {
-  //   let ss = document.querySelector(".sss"); // استخدم # لاستهداف عنصر بواسطة الـ ID
-  //   ss.classList.replace("d-none", "d-block"); // قم بتبديل الفئة "d-none" بالفئة "d-block" لعرض العنصر
-  //   setTimeout(() => {
-  //     ss.classList.replace("d-block", "d-none"); // استرجع الفئة "d-none" بعد انتهاء المدة لإخفاء العنصر
-  //   }, 2000);
-  // }
+ //
+ var numbersArray = ["❤️لا اله الا الله❤️", "❤️الله اكبر❤️", "❤️سبحان الله❤️", "❤️الحمد لله❤️", "❤️استغفر الله العظيم❤️","❤️صلي علي النبي❤️"];
+ var currentIndex = 0;
+  var displayTime = 30000; 
+  var hideTime = 2000; 
   
+  function displayNumber() {
+    var numberBox = document.querySelector('.alert2');
+    numberBox.innerHTML = numbersArray[currentIndex];
+    currentIndex = (currentIndex + 1) % numbersArray.length;
+    numberBox.style.display = 'block';
   
-  // setInterval(s, 3000); // كل 5 دقائق (300000 مللي ثانية)
-  
-
-
-  alert2 = () => {
-  let alert = document.querySelector(".alert2"); 
-  alert.classList.replace("d-none", "d-block");
-  
-
-  
-    setTimeout(() => {
-      alert.classList.replace("d-block", "d-none"); 
-    }, 3000);
+    setTimeout(function () {
+      numberBox.style.display = 'none';
+    }, hideTime);
   }
-  setInterval(alert2, 300000);
   
+  displayNumber();
   
+  setInterval(displayNumber,displayTime);
+  //
+
+  
+///countercart
+
+let countercart =document.querySelector('.countercart')
+let btn1 =document.querySelector('.btnm')
+  let btn2 =document.querySelector('.btnp')
+  let counter=0
+  
+  $(btn1).click(function () { 
+  if(counter>0){
+
+    counter--
+    countercart.innerHTML=counter
+  }
+    
+  });
+  $(btn2).click(function () { 
+  
+    counter++
+    countercart.innerHTML=counter
+    
+  });
+
+
+ 
+    ///countercart
   
   $('#btnUp').click(function(){
     $('html,body').animate({scrollTop:0},200)
   })
-  // let secOffset=$(".slider").offset().top
-  // $('.ex').click(function(){
-  //   $('html,body').scroll(secOffset,400)
-  // })
+  
   document.querySelector('.ex').addEventListener('click', function() {
     var targetSection = document.querySelector('.slider');
     window.scrollTo({
@@ -112,7 +130,7 @@
   });
 
 
-  $(document).ready(function(){
+ 
     $('.slickSlider').slick({
         infinite: true,
         autoplay:true,
@@ -146,7 +164,7 @@
   
         ]
     });
-  });
+
 
 
 
@@ -170,66 +188,20 @@
         
         var mixer = mixitup(".conRow");  
 
-        let searchIcon=document.querySelector(".search")
-        let searchInput=document.querySelector(".search1")
+        // let searchIcon=document.querySelector(".search")
+        // let searchInput=document.querySelector(".search1")
  
-        searchIcon.addEventListener("click",function () {  
-         searchIcon.classList.replace("d-block","d-none")
-        // $(searchIcon).css({"content":"\f002"," z-index":"6546464654"," position":"absolute","left":"8px","right":"11px"})
-         searchInput.classList.replace("d-none","d-block",)
-        })
+        // searchIcon.addEventListener("click",function () {  
+        //  searchIcon.classList.replace("d-block","d-none")
+        // // $(searchIcon).css({"content":"\f002"," z-index":"6546464654"," position":"absolute","left":"8px","right":"11px"})
+        //  searchInput.classList.replace("d-none","d-block",)
+        // })
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-        // var swiper = new Swiper(".slide-swp", {
-        //   pagination: {
-        //     el: ".swiper-pagination",
-        //     dynamicBullets: true,
-        //     clickable:true
-        //   },
-        //   autoplay:{
-        //       delay:2500,
-        //   },
-        //   loop:true,
-        // });
-      
-        // var swiper = new Swiper(".deals", {
-        //   slidesPerView: 2,
-        //   spaceBetween: 30,
-        //     autoplay: {
-        //       delay: 300000,
-        //       disableOnInteraction: false,
-        //     },
-        //     navigation: {
-        //       nextEl: ".swiper-button-next",
-        //       prevEl: ".swiper-button-prev",
-        //     },
-        //     loop:true,
-        //     breakpoints:{
-        //       1200:{
-        //         slidesPerView : 2,
-        //       },
-        //       990 : {
-        //         slidesPerView : 1,
-        //       },
-        //       0 :{
-        //         slidesPerView : 1,
-        //       }
-              
-        //     }
-        // });
-      
       
       
         var swiper = new Swiper(".sale-sec", {
@@ -271,45 +243,16 @@
       
       
         
-        // var swiper = new Swiper(".swip-with-img", {
-        //   slidesPerView: 4,
-        //   spaceBetween: 30,
-        //     autoplay: {
-        //       delay: 3000,
-        //       disableOnInteraction: false,
-        //     },
-        //     navigation: {
-        //       nextEl: ".swiper-button-next",
-        //       prevEl: ".swiper-button-prev",
-        //     },
-        //     loop:true,
-        //     breakpoints:{
-        //       1400:{
-        //         slidesPerView: 4,
-        //       },
-        //       1100:{
-        //         slidesPerView : 3,
-        //       },
-        //       800:{
-        //         slidesPerView : 2,
-        //         spaceBetween: 30,
-        //       },
-        //       700 :{
-        //         slidesPerView : 2,
-        //         spaceBetween: 15,
-        //       },
-        //       0 :{
-        //         slidesPerView : 2,
-        //         spaceBetween: 10,
-        //       }
-              
-        //     }
-        // });
-        
+     
+     
+//animate Aos
+AOS.init();
 
-        AOS.init();
+//animate Aos
 
-   
+
+
+//wishlist Aos
       let wishlistBtn = document.querySelectorAll(".addToWL");
       wishlistBtn.forEach(item => {
         item.onclick = function () {
@@ -319,13 +262,16 @@
               item.firstElementChild.classList.add("far", "fa-heart");
           }
           else {
-              item.firstElementChild.classList.remove("far", "fa-heart");
-              item.firstElementChild.classList.add("fas", "fa-heart", "text-danger");
+            item.firstElementChild.classList.remove("far", "fa-heart");
+            item.firstElementChild.classList.add("fas", "fa-heart", "text-danger");
           }
         }
-        })
+      })
+      //wishlist Aos
       
-        let circleText =document.querySelector('.circle-text');
-        circleText.innerHTML=circleText.textContent.split("").map((char,index)=> `<span style= "transform:rotate(${index *28.5}deg)">${char}</span>`).join("")
-        
+      //btncat
+      let circleText =document.querySelector('.circle-text');
+      circleText.innerHTML=circleText.textContent.split("").map((char,index)=> `<span style= "transform:rotate(${index *28.5}deg)"style="background-color:#555" >${char}</span>`).join("")
+      //btncat
+      
     });

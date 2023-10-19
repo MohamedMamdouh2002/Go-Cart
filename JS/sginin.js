@@ -83,7 +83,7 @@ return true
 } 
 
 
-logEmail.addEventListener('keyup',function(){
+logEmail.addEventListener('change',function(){
   if(isEmailValid1()) {
     document.querySelector(".alertEmail2").classList.add("d-none")
 }else{
@@ -93,7 +93,7 @@ logEmail.addEventListener('keyup',function(){
 
 });
 
-logPassWord.addEventListener('keyup',function(){
+logPassWord.addEventListener('change',function(){
   if(isPassValid1()) {
     document.querySelector(".alertPass2").classList.add("d-none")
 }else{
@@ -104,13 +104,13 @@ logPassWord.addEventListener('keyup',function(){
 });
 
 
-logEmail.addEventListener('keyup',function(){
+logEmail.addEventListener('change',function(){
   if(isEmailValid1()&&isPassValid1()) {
     btnSignIn.removeAttribute("disabled")
   }else{
     btnSignIn.disabled="true"
   }})
-  logPassWord.addEventListener('keyup',function(){
+  logPassWord.addEventListener('change',function(){
   if(isEmailValid1()&&isPassValid1()) {
     btnSignIn.removeAttribute("disabled")
   }else{
